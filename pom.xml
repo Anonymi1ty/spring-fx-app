@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.4.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>spring-fx-app</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-fx-app</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!-- mvn install:install-file -DgroupId=gn -DartifactId=GNAvatarView -Dversion=v1.0-rc -Dpackaging=jar -Dfile=D:\git\github\springb
+oot-javafx-app-demo\lib\GNAvatarView-1.0-rc.jar
+-->
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNAvatarView</artifactId>
+			<version>v1.0-rc</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNButton</artifactId>
+			<version>v1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNCalendar</artifactId>
+			<version>v1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNCarousel</artifactId>
+			<version>v2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNDecorator</artifactId>
+			<version>v2.1.2-alpha</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.github.typhon0/AnimateFX -->
+		<dependency>
+			<groupId>io.github.typhon0</groupId>
+			<artifactId>AnimateFX</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+		<dependency>
+			<groupId>org.controlsfx</groupId>
+			<artifactId>controlsfx</artifactId>
+			<version>8.40.14</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx -->
+		<dependency>
+			<groupId>de.jensd</groupId>
+			<artifactId>fontawesomefx</artifactId>
+			<version>8.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
+		<dependency>
+			<groupId>com.jfoenix</groupId>
+			<artifactId>jfoenix</artifactId>
+			<version>8.0.7</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/eu.hansolo/tilesfx -->
+		<dependency>
+			<groupId>eu.hansolo</groupId>
+			<artifactId>tilesfx</artifactId>
+			<version>1.6.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/eu.hansolo/colors -->
+		<dependency>
+			<groupId>eu.hansolo</groupId>
+			<artifactId>colors</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-base</artifactId>
+			<version>20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-web -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-web</artifactId>
+			<version>20</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+
+				<plugin>
+					<groupId>com.zenjava</groupId>
+					<artifactId>javafx-maven-plugin</artifactId>
+					<version>8.8.3</version>
+					<configuration>
+						<vendor>pdai</vendor>
+						<mainClass>com.pdai.javafx.app.SpringFxAppApplication</mainClass>
+						<allPermissions>true</allPermissions>
+					</configuration>
+				</plugin>
+			<plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.8</version>
+				<configuration>
+					<mainClass>com.pdai.javafx.app.SpringFxAppApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
