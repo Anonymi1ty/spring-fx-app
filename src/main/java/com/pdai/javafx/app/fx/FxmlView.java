@@ -4,6 +4,7 @@ import java.util.ResourceBundle;
 
 public enum FxmlView {
     MAIN {
+        // title()是给窗口设置标题的
         @Override
 		public String title() {
             return getStringFromResourceBundle("app.title");
@@ -26,6 +27,7 @@ public enum FxmlView {
             return "/template/module/dashboard.fxml";
         }
 
+
     },
     MODULE_PROFILE {
         @Override
@@ -47,7 +49,7 @@ public enum FxmlView {
 
         @Override
 		public String fxml() {
-            return "/template/module/webview.fxml";
+            return "/template/main/webview.fxml";
         }
 
     };
