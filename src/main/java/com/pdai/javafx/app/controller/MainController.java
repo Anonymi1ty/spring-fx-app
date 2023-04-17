@@ -54,8 +54,6 @@ public class MainController extends BaseController implements Initializable {
 	@FXML
 	private Button about;
 	@FXML
-	private Button webview;
-	@FXML
 	private Button hamburger;
 
 	@FXML
@@ -108,6 +106,7 @@ public class MainController extends BaseController implements Initializable {
 			drawer.setPrefWidth(minimum);
 
 			for (Node node : views.getChildren()) {
+				// 如果是按钮
 				if (node instanceof Button) {
 					((Button) node).setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 					((Button) node).setAlignment(Pos.BASELINE_CENTER);
@@ -277,19 +276,6 @@ public class MainController extends BaseController implements Initializable {
 		updateBody(FxmlView.MODULE_PROFILE);
 	}
 
-	@FXML
-	private void webview() {
-		updateBody(FxmlView.MODULE_WEBVIEW);
-		SpringUtils.getBean(ConfigController.class).changeTheme(false);
-		SpringUtils.getBean(WebviewController.class).setUrl("https://www.baidu.com");
-	}
-
-	@FXML
-	private void webview2() {
-		updateBody(FxmlView.MODULE_WEBVIEW);
-		SpringUtils.getBean(ConfigController.class).changeTheme(true);
-		SpringUtils.getBean(WebviewController.class).setUrl("https://www.bing.com");
-	}
 
 	private PopOver pop = new PopOver();
 

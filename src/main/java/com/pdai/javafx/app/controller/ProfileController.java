@@ -11,17 +11,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
+import javax.xml.soap.Text;
+
 @Component
 public class ProfileController extends BaseController implements Initializable {
 
     @FXML private Label note;
     @FXML private Rating rating;
     @FXML private Label fullName;
+    @FXML private Label test;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         note.textProperty().bind(rating.ratingProperty().asString(Locale.ENGLISH, "%.2f"));
 		//TODO fullName.textProperty().bind(/* App.getUserDetail().textProperty() */);
+        test.setText("test");
     }
 
 }

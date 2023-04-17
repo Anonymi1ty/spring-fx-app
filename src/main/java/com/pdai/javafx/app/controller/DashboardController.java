@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
-
+// 画图的控制器
 @Component
 public class DashboardController extends BaseController implements Initializable {
 

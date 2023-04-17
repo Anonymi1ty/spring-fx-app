@@ -21,7 +21,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 <?import org.controlsfx.control.Rating?>
-
+<!--个人主页-->
 <StackPane prefHeight="762.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pdai.javafx.app.controller.ProfileController">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
@@ -31,6 +31,7 @@
          <children>
             <HBox spacing="80.0" VBox.vgrow="ALWAYS">
                <children>
+                   <!--人脸+基本信息-->
                   <VBox alignment="TOP_CENTER" prefHeight="742.0" prefWidth="238.0">
                      <children>
                         <ImageView fitHeight="226.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
@@ -71,7 +72,8 @@
                                     </GridPane>
                                     <TextFlow prefHeight="56.0" prefWidth="216.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />
+<!--                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />-->
+                                          <Label fx:id="test" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />
                                        </children>
                                     </TextFlow>
                                     <GridPane>
@@ -123,8 +125,10 @@
                         </VBox>
                      </children>
                   </VBox>
+                   <!--第二列-->
                   <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                      <children>
+                         <!--位置-->
                         <VBox prefHeight="89.0" prefWidth="641.0">
                            <children>
                               <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
@@ -152,6 +156,7 @@
                                                 <Insets top="10.0" />
                                              </GridPane.margin>
                                           </Label>
+                                           <!--地点-->
                                           <Label layoutX="171.0" layoutY="40.0" style="-fx-text-fill: -text-color;" text="New York, NY" GridPane.valignment="TOP">
                                              <graphic>
                                                 <SVGPath content="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" style="-fx-fill: -icon-color;" />
@@ -166,6 +171,7 @@
                               </HBox>
                            </children>
                         </VBox>
+                         <!--打分-->
                         <VBox prefHeight="73.0" prefWidth="641.0">
                            <children>
                               <Label style="-fx-text-fill: -text-color;" text="Rankings" />
@@ -177,6 +183,7 @@
                               </HBox>
                            </children>
                         </VBox>
+                         <!--三个小图标-->
                         <VBox alignment="CENTER" prefHeight="75.0" prefWidth="619.0">
                            <children>
                               <HBox spacing="20.0">
@@ -196,6 +203,7 @@
                         </VBox>
                         <TabPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                           <tabs>
+                          <!--可选信息展示-->
                             <Tab closable="false" text="About">
                                  <content>
                                     <VBox prefHeight="200.0" prefWidth="100.0">

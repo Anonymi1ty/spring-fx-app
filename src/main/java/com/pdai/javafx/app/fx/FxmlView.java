@@ -40,18 +40,6 @@ public enum FxmlView {
             return "/template/module/profile.fxml";
         }
 
-    },
-    MODULE_WEBVIEW {
-        @Override
-		public String title() {
-            return getStringFromResourceBundle("module.webview.title");
-        }
-
-        @Override
-		public String fxml() {
-            return "/template/main/webview.fxml";
-        }
-
     };
 	
     

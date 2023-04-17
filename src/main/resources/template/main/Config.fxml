@@ -8,7 +8,7 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
-
+<!-- 右上角弹出框 -->
 <ScrollPane fitToHeight="true" fitToWidth="true" prefWidth="225.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pdai.javafx.app.controller.ConfigController">
    <content>
       <VBox prefWidth="223.0">
