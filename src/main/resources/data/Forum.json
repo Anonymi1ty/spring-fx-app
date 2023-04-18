@@ -4,7 +4,49 @@
     "building owners":"John",
     "Date": "2019-01-01",
     "follow up": [
-      {}
+      {
+        "date": "2019-01-01",
+        "Content": "Follow up 1",
+        "building owners": "Bill",
+        "status": "open"
+      },
+      {
+        "date": "2019-01-02",
+        "Content": "Follow up 2",
+        "building owners": "Dave",
+        "status": "open"
+      },
+      {
+        "date": "2019-01-03",
+        "Content": "Follow up 3",
+        "building owners": "Tom",
+        "status": "open"
+      }
     ]
   },
+  "Consulting school related content": {
+    "description":"Consulting school related content",
+    "building owners":"Pol",
+    "Date": "2019-01-02",
+    "follow up": [
+      {
+        "date": "2019-01-03",
+        "Content": "Follow up 1",
+        "building owners": "Bill",
+        "status": "open"
+      },
+      {
+        "date": "2019-01-04",
+        "Content": "Follow up 2",
+        "building owners": "Dave",
+        "status": "open"
+      },
+      {
+        "date": "2019-01-05",
+        "Content": "Follow up 3",
+        "building owners": "Tom",
+        "status": "open"
+      }
+    ]
+  }
 }
