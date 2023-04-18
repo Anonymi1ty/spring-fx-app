@@ -43,8 +43,8 @@
                            <children>
                               <HBox alignment="BOTTOM_LEFT">
                                  <children>
-                                    <Label styleClass="min" text="Work" />
-                                    <Separator prefWidth="215.0" />
+                                    <Label styleClass="h3" text="Information" />
+                                    <Separator prefWidth="100.0" />
                                  </children>
                                  <VBox.margin>
                                     <Insets bottom="20.0" />
@@ -52,53 +52,65 @@
                               </HBox>
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <GridPane>
-                                       <columnConstraints>
-                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
-                                       </columnConstraints>
-                                       <rowConstraints>
-                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                                       </rowConstraints>
-                                       <children>
-                                          <Label style="-fx-font-weight: bold;" styleClass="h5" text="Spotify New York" />
-                                          <Label mnemonicParsing="false" text="Primary" GridPane.columnIndex="1">
-                                             <styleClass>
-                                                <String fx:value="btn-small" />
-                                                <String fx:value="lbl-profile" />
-                                             </styleClass>
-                                          </Label>
-                                       </children>
-                                    </GridPane>
-                                    <TextFlow prefHeight="56.0" prefWidth="216.0">
-                                       <children>
-<!--                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />-->
-                                          <Label fx:id="test" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />
-                                       </children>
-                                    </TextFlow>
-                                    <GridPane>
-                                       <columnConstraints>
-                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
-                                       </columnConstraints>
-                                       <rowConstraints>
-                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                                       </rowConstraints>
-                                       <children>
-                                          <Label style="-fx-font-weight: bold;" styleClass="h5" text="Metropolitan &#10;Museum" />
-                                          <Label mnemonicParsing="false" text="Secondary" GridPane.columnIndex="1">
-                                             <styleClass>
-                                                <String fx:value="btn-small" />
-                                                <String fx:value="lbl-profile" />
-                                             </styleClass>
-                                          </Label>
-                                       </children>
-                                    </GridPane>
-                                    <TextFlow layoutX="10.0" layoutY="50.0" prefHeight="56.0" prefWidth="216.0">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street &#10;New Yourk, NY 10038-78 2120312051" />
-                                       </children>
-                                    </TextFlow>
+                                     <Label fx:id="age" style="-fx-fill: -text-color;" styleClass="h4"/>
+                                     <Label fx:id="major" style="-fx-fill: -text-color;" styleClass="h4"/>
+                                     <Label fx:id="College" style="-fx-fill: -text-color;" styleClass="h4"/>
+                                     <Label fx:id="gpa" style="-fx-fill: -text-color;" styleClass="h4"/>
+                                     <Label fx:id="rank" style="-fx-fill: -text-color;" styleClass="h4"/>
+<!--                                    <GridPane>-->
+<!--                                       <columnConstraints>-->
+<!--                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />-->
+<!--                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />-->
+<!--                                       </columnConstraints>-->
+<!--                                       <rowConstraints>-->
+<!--                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />-->
+<!--                                       </rowConstraints>-->
+<!--                                       <children>-->
+<!--                                          <Label fx:id="age" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="major" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="College" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="gpa" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="rank" style="-fx-fill: -text-color;"/>-->
+<!--                                          <Label mnemonicParsing="false" text="Primary" GridPane.columnIndex="1">-->
+<!--                                             <styleClass>-->
+<!--                                                <String fx:value="btn-small" />-->
+<!--                                                <String fx:value="lbl-profile" />-->
+<!--                                             </styleClass>-->
+<!--                                          </Label>-->
+<!--                                       </children>-->
+<!--                                    </GridPane>-->
+<!--                                    <TextFlow prefHeight="56.0" prefWidth="216.0">-->
+<!--                                       <children>-->
+<!--&lt;!&ndash;                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street&#10;New Yourk, NY 10038-78 2120312051" />&ndash;&gt;-->
+<!--                                          <Label fx:id="major" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="College" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="gpa" style="-fx-fill: -text-color;"/>-->
+<!--                                           <Label fx:id="rank" style="-fx-fill: -text-color;"/>-->
+<!--                                       </children>-->
+<!--                                    </TextFlow>-->
+<!--                                    <GridPane>-->
+<!--                                       <columnConstraints>-->
+<!--                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />-->
+<!--                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />-->
+<!--                                       </columnConstraints>-->
+<!--                                       <rowConstraints>-->
+<!--                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />-->
+<!--                                       </rowConstraints>-->
+<!--                                       <children>-->
+<!--                                          <Label style="-fx-font-weight: bold;" styleClass="h5" text="Metropolitan &#10;Museum" />-->
+<!--                                          <Label mnemonicParsing="false" text="Secondary" GridPane.columnIndex="1">-->
+<!--                                             <styleClass>-->
+<!--                                                <String fx:value="btn-small" />-->
+<!--                                                <String fx:value="lbl-profile" />-->
+<!--                                             </styleClass>-->
+<!--                                          </Label>-->
+<!--                                       </children>-->
+<!--                                    </GridPane>-->
+<!--                                    <TextFlow layoutX="10.0" layoutY="50.0" prefHeight="56.0" prefWidth="216.0">-->
+<!--                                       <children>-->
+<!--                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="170 Wiliam Street &#10;New Yourk, NY 10038-78 2120312051" />-->
+<!--                                       </children>-->
+<!--                                    </TextFlow>-->
                                  </children>
                               </VBox>
                               <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0">

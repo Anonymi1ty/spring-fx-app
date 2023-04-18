@@ -40,7 +40,21 @@ public enum FxmlView {
             return "/template/module/profile.fxml";
         }
 
-    };
+    },
+    MYTEST {
+        @Override
+        public String title() {
+            return getStringFromResourceBundle("module.mytest.title");
+        }
+
+        @Override
+        public String fxml() {
+            return "/template/module/mytest.fxml";
+        }
+
+    }
+
+    ;
 	
     
     public abstract String title();

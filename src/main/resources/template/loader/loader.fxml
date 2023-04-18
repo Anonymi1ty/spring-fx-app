@@ -40,7 +40,7 @@
                   </Label>
                </children>
             </VBox>
-            <Label layoutX="5.0" layoutY="407.0" prefHeight="17.0" prefWidth="186.0" text="© pdai - version 1.1.1  build 2019042801" textFill="WHITE" AnchorPane.bottomAnchor="10.0">
+            <Label layoutX="5.0" layoutY="407.0" prefHeight="17.0" prefWidth="186.0" text="©Group69" textFill="WHITE" AnchorPane.bottomAnchor="10.0">
                <font>
                   <Font size="10.0" />
                </font>

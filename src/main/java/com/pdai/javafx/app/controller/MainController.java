@@ -150,8 +150,9 @@ public class MainController extends BaseController implements Initializable {
 					if (child instanceof Button) {
 						child.setOnMouseEntered(e -> {
 							popup.setAutoHide(true);
-							if (popup.isShowing())
+							if (popup.isShowing()) {
 								popup.hide();
+							}
 						});
 					}
 
@@ -257,6 +258,11 @@ public class MainController extends BaseController implements Initializable {
 	@FXML
 	private void dashboard() {
 		updateBody(FxmlView.MODULE_DASHBOARD);
+	}
+
+	@FXML
+	private void mytest() {
+		updateBody(FxmlView.MYTEST);
 	}
 
 	private void updateBody(FxmlView view) {
