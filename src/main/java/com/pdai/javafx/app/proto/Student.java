@@ -1,7 +1,10 @@
 package com.pdai.javafx.app.proto;
 
-import java.util.Map;
+import lombok.Data;
 
+import java.util.List;
+import java.util.Map;
+@Data
 public class Student {
     //本类负责承接Student_info.json文件中的数据
     private String name;
@@ -11,13 +14,12 @@ public class Student {
     private int rank;
 
     private String[] courses;
-    private Map<String,Map<String,String>> PastCourses;
-    private Map<String,String>PersonalPlanning;
-    private Map<String,String>RecentEvents;
-    private Map<String,String>FutureEvents;
-    private String[] PortfolioPositions;
-    private Map<String,String>[] WorkExperience;
-    private Map<String,String>[] Awards;
-    private Map<String,String>[] personalProjects;
+    private Map<String, Map<String, String>> PastCourses;
+    private Map<String, String> PersonalPlanning;
+    private Map<String, List> RecentEvents;
+    private List<String> Position;
+    private List<Map<String,String>> WorkExperience;
+    private List<Map<String,String>> Awards;
+    private List<Map<String,String>> PersonalProjects;
 
 }
