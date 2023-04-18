@@ -14,19 +14,19 @@
     ],
     "past Courses": {
         "Internet Protocol": {
-            "grade": 95,
+            "grade": "95",
             "year": "2022+"
         },
         "Data Mining": {
-            "grade": 98,
+            "grade":"98",
             "year": "2022+"
         },
         "Database": {
-            "grade": 97,
+            "grade": "97",
             "year": "2022-"
         },
         "Business Management": {
-            "grade": 95,
+            "grade": "95",
             "year": "2021+"
         }
     },
@@ -63,7 +63,7 @@
           "time": "2023.6.20"
         }
       ],
-      "Personal Works": [
+      "Personal Projects": [
         {
           "Project Name": "A website for the school",
           "time": "2022.9-2022.12",
