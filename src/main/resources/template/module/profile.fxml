@@ -147,8 +147,8 @@
                                  <children>
                                     <VBox>
                                        <children>
-                                          <Label fx:id="fullName" style="-fx-font-weight: bold;" styleClass="h3" text="Jane Doe" />
-                                          <Hyperlink text="Product Designer" />
+                                          <Label fx:id="fullName" style="-fx-font-weight: bold;" styleClass="h3"/>
+                                          <Label fx:id="position" style="-fx-text-fill: -text-color;"/>
                                        </children>
                                     </VBox>
                                     <GridPane HBox.hgrow="ALWAYS">
@@ -160,7 +160,7 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                       </rowConstraints>
                                        <children>
-                                          <Label style="-fx-text-fill: -text-color;" text="Bookmark" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                          <Label style="-fx-text-fill: -text-color;" text="Personal Homepage" GridPane.columnIndex="1" GridPane.valignment="TOP">
                                              <graphic>
                                                 <SVGPath content="M19 3H5v18l7-3 7 3V3z" style="-fx-fill: -icon-color;" />
                                              </graphic>
@@ -169,7 +169,7 @@
                                              </GridPane.margin>
                                           </Label>
                                            <!--地点-->
-                                          <Label layoutX="171.0" layoutY="40.0" style="-fx-text-fill: -text-color;" text="New York, NY" GridPane.valignment="TOP">
+                                          <Label fx:id="grade" layoutX="171.0" layoutY="40.0" style="-fx-text-fill: -text-color;">
                                              <graphic>
                                                 <SVGPath content="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" style="-fx-fill: -icon-color;" />
                                              </graphic>

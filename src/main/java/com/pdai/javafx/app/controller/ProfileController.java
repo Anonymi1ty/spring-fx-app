@@ -24,6 +24,8 @@ public class ProfileController extends BaseController implements Initializable {
     @FXML private Label College;
     @FXML private Label gpa;
     @FXML private Label rank;
+    @FXML private Label grade;
+    @FXML private Label position;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -34,6 +36,9 @@ public class ProfileController extends BaseController implements Initializable {
         College.setText("College : "+"International School");
         gpa.setText("gpa : "+"4.5");
         rank.setText("rank : "+"10");
+        fullName.setText("Jason");
+        grade.setText("Junior");
+        position.setText("Student Council President" + "\n" + "Group Secretary");
     }
 
 }
