@@ -2,8 +2,13 @@ package com.pdai.javafx.app.controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
+import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
+import com.pdai.javafx.app.proto.Student;
+import javafx.scene.layout.*;
 import org.controlsfx.control.PopOver;
 import org.springframework.stereotype.Component;
 
@@ -31,9 +36,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TitledPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+
+import static com.pdai.javafx.app.utils.JsonUtils.getStudentInfo;
 
 @Component
 public class MainController extends BaseController implements Initializable {
@@ -79,6 +83,8 @@ public class MainController extends BaseController implements Initializable {
 	private Parent popContent;
 	public static MainController ctrl;
 
+	private Student studentInfo ;
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ctrl = this;
@@ -93,6 +99,9 @@ public class MainController extends BaseController implements Initializable {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		studentInfo = getStudentInfo();
+
+		notifications.setText(String.valueOf(studentInfo.getRecentEvents().size()));
 	}
 
 	@FXML
@@ -346,8 +355,10 @@ public class MainController extends BaseController implements Initializable {
 			Separator top = new Separator();
 			Separator bottom = new Separator();
 
-			Label message = new Label("Messages");
-			Label count = new Label("4 News");
+			Label message = new Label("Recent Events");
+			Label count = new Label(studentInfo.getRecentEvents().size() + " News");
+
+
 			count.getStyleClass().add("text-success");
 			GridPane title = new GridPane();
 			title.setMinHeight(40D);
@@ -359,15 +370,49 @@ public class MainController extends BaseController implements Initializable {
 
 			ListView<Node> listView = new ListView<>();
 
+			GridPane main = new GridPane();
+//			main.getColumnConstraints().add(new ColumnConstraints());
+//			main.getColumnConstraints().add(new ColumnConstraints());
+//			main.getColumnConstraints().add(new ColumnConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+//			main.getRowConstraints().add(new RowConstraints());
+			List<Label> RecentEvents = new ArrayList<Label>();
+			studentInfo.getRecentEvents().forEach((key,value) -> {
+				RecentEvents.add(new Label());
+				Label label = new Label("              " + key);
+				label.setAlignment(Pos.CENTER);
+				label.setStyle("-fx-font-weight: bold; -fx-font-size: 20px");
+				RecentEvents.add(label);
+				for (int i = 0 ; i<value.size();i++){
+					label = new Label((String) value.get(i));
+					label.setAlignment(Pos.CENTER);
+					RecentEvents.add(label);
+				}
+			});
+			for ( int i=1 ; i<RecentEvents.size()+1;i++){
+				main.add(RecentEvents.get(i-1), 0, i);
+			}
+
+
+
+
+
 //            listView.getItems().addAll(list);
 			listView.getStyleClass().add("border-0");
 
-			Button btn = new Button("Read all messages");
+			Button btn = new Button("Learn more events");
 			btn.getStyleClass().add("btn-flat");
 
-			VBox root = new VBox(title, top, listView, bottom, btn);
+			VBox root = new VBox(title, top, main , listView, bottom, btn);
 			root.setAlignment(Pos.CENTER);
 			root.setPrefSize(300, 300);
+			main.setAlignment(Pos.CENTER);
 			title.setPrefWidth(root.getPrefWidth());
 			count.setPrefWidth(root.getPrefWidth());
 			message.setPrefWidth(root.getPrefWidth());

@@ -32,7 +32,7 @@ public class JsonUtilsTest {
         System.out.println("----------------------------------------------------------------------");
         System.out.println(testStringToJson);
         System.out.println("----------------------------------------------------------------------");
-        System.out.println(testStringToJson.getWorkExperience().get(0).get("Company Name"));
+        System.out.println(testStringToJson.getRecentEvents().size());
     }
     @Test
     public void testGetStudentInfo() {
