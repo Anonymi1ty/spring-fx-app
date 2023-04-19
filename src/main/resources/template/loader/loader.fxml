@@ -24,9 +24,6 @@
                <image>
                   <Image url="@../../icons/predios-e-vetores-3fee7.jpg" />
                </image>
-               <effect>
-                  <ColorAdjust brightness="0.05" contrast="0.06" hue="-0.02" saturation="0.31" />
-               </effect>
             </ImageView>
             <VBox alignment="BOTTOM_LEFT" layoutX="449.0" layoutY="188.0" prefHeight="576.0" prefWidth="462.0" styleClass="block" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <padding>
