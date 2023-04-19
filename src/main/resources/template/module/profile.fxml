@@ -311,8 +311,10 @@
                                                  <Label styleClass="h4" fx:id="ProjectDescription2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
 
                                                  <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Link :" GridPane.rowIndex="15" />
-                                                 <Label styleClass="h4" fx:id="ProjectLink1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-                                                 <Label styleClass="h4" fx:id="ProjectLink2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+
+                                                 <Hyperlink styleClass="h4" fx:id="ProjectLink1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                                 <Hyperlink styleClass="h4" fx:id="ProjectLink2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+
 
                                                  <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Time :" GridPane.rowIndex="16" />
                                                  <Label styleClass="h4" fx:id="ProjectTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="16" />

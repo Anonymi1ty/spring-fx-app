@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
 import com.pdai.javafx.app.proto.Student;
 import javafx.scene.layout.*;
+import javafx.stage.Stage;
 import org.controlsfx.control.PopOver;
 import org.springframework.stereotype.Component;
 
@@ -437,4 +438,8 @@ public class MainController extends BaseController implements Initializable {
 		}
 	}
 
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+
+	}
 }

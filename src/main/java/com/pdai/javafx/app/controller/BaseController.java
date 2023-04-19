@@ -1,4 +1,6 @@
 package com.pdai.javafx.app.controller;
 
-public abstract class BaseController {
+import javafx.application.Application;
+
+public abstract class BaseController extends Application {
 }

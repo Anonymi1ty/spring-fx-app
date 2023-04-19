@@ -3,6 +3,7 @@ package com.pdai.javafx.app.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.stage.Stage;
 import org.springframework.stereotype.Component;
 
 import javafx.collections.FXCollections;
@@ -49,5 +50,9 @@ public class DashboardController extends BaseController implements Initializable
         areaChart.getData().setAll(series);
         areaChart.setCreateSymbols(true);
     }
-    
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+    }
 }

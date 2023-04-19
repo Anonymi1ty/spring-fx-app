@@ -6,6 +6,11 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import com.pdai.javafx.app.proto.Student;
+import javafx.application.HostServices;
+import javafx.scene.Scene;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import org.controlsfx.control.Rating;
 import org.springframework.stereotype.Component;
 
@@ -47,11 +52,11 @@ public class ProfileController extends BaseController implements Initializable {
     @FXML private Label ProjectName2;
     @FXML private Label ProjectDescription1;
     @FXML private Label ProjectDescription2;
-    @FXML private Label ProjectLink1;
-    @FXML private Label ProjectLink2;
+    @FXML private Hyperlink ProjectLink1;
+    @FXML private Hyperlink ProjectLink2;
     @FXML private Label ProjectTime1;
     @FXML private Label ProjectTime2;
-
+    private Student studentInfo;
 
 
 
@@ -60,7 +65,7 @@ public class ProfileController extends BaseController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // 获取学生信息
-        Student studentInfo = getStudentInfo();
+        studentInfo = getStudentInfo();
 
         note.textProperty().bind(rating.ratingProperty().asString(Locale.ENGLISH, "%.2f"));
 		//TODO fullName.textProperty().bind(/* App.getUserDetail().textProperty() */);
@@ -93,6 +98,20 @@ public class ProfileController extends BaseController implements Initializable {
         ProjectTime1.setText(studentInfo.getPersonalProjects().get(0).get("Time"));
         ProjectTime2.setText(studentInfo.getPersonalProjects().get(1).get("Time"));
 
+
     }
 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        // 点击链接ProjectLink1后跳转到网页
+        ProjectLink1.setOnAction(event -> {
+            HostServices hostServices = getHostServices();
+            hostServices.showDocument(ProjectLink1.getText());
+        });
+        // 点击链接ProjectLink2后跳转到网页
+        ProjectLink2.setOnAction(event -> {
+            HostServices hostServices = getHostServices();
+            hostServices.showDocument(ProjectLink2.getText());
+        });
+    }
 }
