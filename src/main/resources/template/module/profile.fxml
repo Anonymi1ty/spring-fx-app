@@ -323,7 +323,7 @@
                                        </padding>
                                     </VBox>
                                  </content></Tab>
-                              <Tab closable="false" text="Course Schedule">
+                              <Tab closable="false" text="Schedule">
                                   <content>
                                       <VBox prefWidth="1000" prefHeight="1000">
                                       <children>
