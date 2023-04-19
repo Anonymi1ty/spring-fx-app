@@ -335,8 +335,9 @@
                                   <content>
                                       <VBox prefWidth="1000" prefHeight="1000">
                                       <children>
-                                      <ScrollPane fitToHeight="true" fitToWidth="true">
-                                          <VBox>
+<!--                                          fitToHeight="true" fitToWidth="true-->
+                                      <ScrollPane fitToWidth="true" prefHeight="1500">
+                                          <VBox prefWidth="1000" prefHeight="2000">
                                               <children>
                                               <GridPane alignment="CENTER" hgap="5" vgap="5" >
                                                   <columnConstraints>
@@ -348,21 +349,21 @@
                                                       <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                   </columnConstraints>
                                                   <rowConstraints>
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
                                                   </rowConstraints>
                                                   <children>
                                                       <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Monday" />
@@ -435,6 +436,53 @@
                                           </VBox>
                                       </ScrollPane>
                                       </children>
+                                      </VBox>
+
+                                  </content></Tab>
+                              <Tab closable="false" text="Grade">
+                                  <content>
+                                      <VBox prefWidth="1000" prefHeight="1000">
+                                          <children>
+                                              <!--                                          fitToHeight="true" fitToWidth="true-->
+                                              <ScrollPane fitToWidth="true" prefHeight="1500">
+                                                  <VBox prefWidth="1000" prefHeight="2000">
+                                                      <children>
+                                                          <GridPane fx:id="Grade" alignment="CENTER" hgap="5" vgap="5" >
+                                                              <columnConstraints>
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                              <children>
+                                                                  <Label GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Course" />
+                                                                  <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Grade" />
+                                                                  <Label GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="year" />
+                                                              </children>
+                                                          </GridPane>
+                                                      </children>
+                                                  </VBox>
+                                              </ScrollPane>
+                                          </children>
                                       </VBox>
 
                                   </content></Tab>

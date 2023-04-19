@@ -9,6 +9,7 @@ import com.pdai.javafx.app.proto.Student;
 import javafx.application.HostServices;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.controlsfx.control.Rating;
@@ -17,6 +18,43 @@ import org.springframework.stereotype.Component;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+
+import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
+import com.pdai.javafx.app.proto.Student;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+import org.controlsfx.control.PopOver;
+import org.springframework.stereotype.Component;
+
+import com.jfoenix.controls.JFXBadge;
+import com.jfoenix.controls.JFXButton;
+import com.pdai.javafx.app.fx.FxmlView;
+import com.pdai.javafx.app.fx.StageManager;
+import com.pdai.javafx.app.utils.SpringUtils;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.HPos;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Separator;
+import javafx.scene.control.TitledPane;
 
 import javax.xml.soap.Text;
 
@@ -56,7 +94,9 @@ public class ProfileController extends BaseController implements Initializable {
     @FXML private Hyperlink ProjectLink2;
     @FXML private Label ProjectTime1;
     @FXML private Label ProjectTime2;
+    @FXML private GridPane Grade;
     private Student studentInfo;
+    int i = 0;
 
 
 
@@ -97,6 +137,21 @@ public class ProfileController extends BaseController implements Initializable {
         ProjectLink2.setText(studentInfo.getPersonalProjects().get(1).get("Link"));
         ProjectTime1.setText(studentInfo.getPersonalProjects().get(0).get("Time"));
         ProjectTime2.setText(studentInfo.getPersonalProjects().get(1).get("Time"));
+
+        i=1;
+        studentInfo.getPastCourses().forEach((key, value) -> {
+
+            Label courseName = new Label(key);
+            courseName.setStyle("-fx-fill: -text-color;-fx-font-weight: bold;");
+            Grade.add(courseName, 0, i);
+            Label mygrade = new Label(value.get("grade"));
+            mygrade.setStyle("-fx-fill: -text-color;-fx-font-weight: bold;");
+            Grade.add(mygrade, 1, i);
+            Label mytime = new Label(value.get("year"));
+            mytime.setStyle("-fx-fill: -text-color;-fx-font-weight: bold;");
+            Grade.add(mytime, 2, i);
+            i++;
+        });
 
 
     }
