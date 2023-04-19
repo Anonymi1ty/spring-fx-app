@@ -258,6 +258,7 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
+<!--                                                 居中-->
                                                 <Label styleClass="h3" text="Work Experience" GridPane.rowIndex="0" alignment="CENTER"/>
 
                                                  <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Practical and Internship :" GridPane.rowIndex="1" />
@@ -272,6 +273,7 @@
                                                  <Label styleClass="h4" fx:id="InternshipTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                                  <Label styleClass="h4" fx:id="InternshipTime2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
 
+<!--                                                 居中-->
                                                  <Label styleClass="h3" text="Awards" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
                                                  <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Competition Name :" GridPane.rowIndex="5" />
@@ -286,6 +288,7 @@
                                                  <Label styleClass="h4" fx:id="AwardTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                                                  <Label styleClass="h4" fx:id="AwardTime2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
 
+<!--                                                 居中-->
                                                  <Label styleClass="h3" text="Personal Projects" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
 
                                                  <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Project Name :" GridPane.rowIndex="9" />
