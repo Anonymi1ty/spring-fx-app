@@ -97,23 +97,6 @@ TreeTable支持
 
 ![](https://www.pdai.tech/_images/spring/springboot-javafx-app-3.png)
 
-#### Web应用嵌入 - Webview
-
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93d3cucGRhaS50ZWNoL19pbWFnZXMvc3ByaW5nL3NwcmluZ2Jvb3QtamF2YWZ4LWFwcC00LnBuZw?x-oss-process=image/format,png)
-
-#### 多种主题切换 - Theme
-
-![](https://www.pdai.tech/_images/spring/springboot-javafx-app-5.png)
-
-#### 消息及配置悬浮框 - Message/Configuration...
-
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93d3cucGRhaS50ZWNoL19pbWFnZXMvc3ByaW5nL3NwcmluZ2Jvb3QtamF2YWZ4LWFwcC02LnBuZw?x-oss-process=image/format,png)
-
-#### 全屏最大化最小化 - FullScreen/Max/Min/Close
-> 包括全屏是基于JavaFX的一个组件，不是原生。
-
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93d3cucGRhaS50ZWNoL19pbWFnZXMvc3ByaW5nL3NwcmluZ2Jvb3QtamF2YWZ4LWFwcC03LnBuZw?x-oss-process=image/format,png)
-
 ### 如何部署
 > 收到几个开发问如何进行运行和部署，统一回复下：
 
