@@ -237,9 +237,12 @@
                           <!--可选信息展示-->
                             <Tab closable="false" text="Portfolio">
                                  <content>
-                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <VBox prefHeight="1000.0" prefWidth="1000.0">
                                        <children>
-                                          <GridPane prefHeight="700.0" prefWidth="579.0">
+                                           <ScrollPane fitToHeight="true" fitToWidth="true">
+                                               <VBox>
+                                               <children>
+                                          <GridPane prefHeight="700.0" prefWidth="579.0" alignment="CENTER">
                                             <columnConstraints>
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" />
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="443.0" minWidth="10.0" />
@@ -317,6 +320,9 @@
 
                                              </children>
                                           </GridPane>
+                                               </children>
+                                               </VBox>
+                                           </ScrollPane>
                                        </children>
                                        <padding>
                                           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
