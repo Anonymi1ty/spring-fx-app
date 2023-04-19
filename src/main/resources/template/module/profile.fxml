@@ -325,109 +325,110 @@
                                  </content></Tab>
                               <Tab closable="false" text="Course Schedule">
                                   <content>
-                                      <VBox prefHeight="1000.0" prefWidth="1000.0">
+                                      <VBox prefWidth="1000" prefHeight="1000">
                                       <children>
-                                      <ScrollPane prefHeight="1000.0" prefWidth="1000.0">
-                                          <content>
-                                              <AnchorPane prefHeight="1000.0" prefWidth="1000.0">
-                                                  <GridPane alignment="CENTER" hgap="5" vgap="5" >
-                                                      <columnConstraints>
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                          <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                                                      </columnConstraints>
-                                                      <rowConstraints>
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                          <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
-                                                      </rowConstraints>
-                                                      <children>
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="星期一" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="0" text="星期二" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="0" text="星期三" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="0" text="星期四" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="0" text="星期五" />
+                                      <ScrollPane fitToHeight="true" fitToWidth="true">
+                                          <VBox>
+                                              <children>
+                                              <GridPane alignment="CENTER" hgap="5" vgap="5" >
+                                                  <columnConstraints>
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                      <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                      <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                  <children>
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="星期一" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="0" text="星期二" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="0" text="星期三" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="0" text="星期四" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="0" text="星期五" />
 
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="08:00 - 08:45" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="08:50 - 09:35" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="09:50 - 10:35" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="10:40 - 11:25" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="11:30 - 12:15" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="6" text="13:00 - 13:45" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="7" text="13:50 - 14:35" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="8" text="14:45 - 15:30" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="9" text="15:40 - 16:25" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="10" text="16:35 - 17:20" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="11" text="17:25 - 18:10" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="12" text="18:30 - 19:15" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="13" text="19:15 - 20:05" />
-                                                          <Label GridPane.columnIndex="0" GridPane.rowIndex="14" text="20:10 - 20:55" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="08:00 - 08:45" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="08:50 - 09:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="09:50 - 10:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="10:40 - 11:25" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="11:30 - 12:15" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="6" text="13:00 - 13:45" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="7" text="13:50 - 14:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="8" text="14:45 - 15:30" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="9" text="15:40 - 16:25" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="10" text="16:35 - 17:20" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="11" text="17:25 - 18:10" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="12" text="18:30 - 19:15" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="13" text="19:15 - 20:05" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="14" text="20:10 - 20:55" />
 
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="2" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="3" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="4" text="网络安全法" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="6" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="7" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="12" text="软件工程" />
-                                                          <Label GridPane.columnIndex="1" GridPane.rowIndex="13" text="软件工程" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="2" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="3" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="4" text="网络安全法" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="6" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="7" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="12" text="软件工程" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="13" text="软件工程" />
 
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="2" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="8" text="个人发展规划" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="9" text="个人发展规划" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="10" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="11" text="物流与供应链管理" />
-                                                          <Label GridPane.columnIndex="2" GridPane.rowIndex="12" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="2" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="8" text="个人发展规划" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="9" text="个人发展规划" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="10" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="11" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="12" text="物流与供应链管理" />
 
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="1" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="2" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="3" text="网络安全法" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="4" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="5" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="12" text="软件工程" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="13" text="软件工程" />
-                                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="14" text="软件工程" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="1" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="2" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="3" text="网络安全法" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="4" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="5" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="12" text="软件工程" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="13" text="软件工程" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="14" text="软件工程" />
 
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="1" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="2" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="3" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="7" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="10" text="物流与供应链管理" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="11" text="物流与供应链管理" />
-                                                          <Label GridPane.columnIndex="4" GridPane.rowIndex="12" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="1" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="2" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="3" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="7" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="10" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="11" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="12" text="物流与供应链管理" />
 
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="1" text="移动互联网" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="2" text="移动互联网" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="3" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="4" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="5" text="知识产权基础" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="6" text="体育专项" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="7" text="体育专项" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="13" text="软件工程" />
-                                                          <Label GridPane.columnIndex="5" GridPane.rowIndex="14" text="软件工程" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="1" text="移动互联网" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="2" text="移动互联网" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="3" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="4" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="5" text="知识产权基础" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="6" text="体育专项" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="7" text="体育专项" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="13" text="软件工程" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="14" text="软件工程" />
 
-                                                      </children>
-                                                  </GridPane>
-                                              </AnchorPane>
-                                          </content>
+                                                  </children>
+                                              </GridPane>
+                                              </children>
+                                          </VBox>
                                       </ScrollPane>
                                       </children>
                                       </VBox>
+
                                   </content></Tab>
                           </tabs>
                         </TabPane>
