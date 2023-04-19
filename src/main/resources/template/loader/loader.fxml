@@ -25,7 +25,7 @@
                   <Image url="@../../icons/predios-e-vetores-3fee7.jpg" />
                </image>
             </ImageView>
-            <VBox alignment="BOTTOM_LEFT" layoutX="449.0" layoutY="188.0" prefHeight="576.0" prefWidth="462.0" styleClass="block" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="BOTTOM_LEFT" layoutX="449.0" layoutY="188.0" prefHeight="576.0" prefWidth="462.0" styleClass="block" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-opacity: 0.92;">
                <padding>
                   <Insets bottom="100.0" left="15.0" />
                </padding>
@@ -48,7 +48,7 @@
                   <Font name="System Bold" size="63.0" />
                </font>
             </Text>
-            <Label fx:id="progressLabel" layoutX="14.0" layoutY="336.0" text="正在加载..." textFill="WHITE" AnchorPane.bottomAnchor="60.0" />
+            <Label fx:id="progressLabel" layoutX="14.0" layoutY="336.0" text="loading..." textFill="WHITE" AnchorPane.bottomAnchor="60.0" />
             <JFXProgressBar fx:id="progressBar" layoutX="14.0" layoutY="382.0" prefHeight="4.0" prefWidth="401.0" progress="0.0" AnchorPane.bottomAnchor="36.0" />
             <Label layoutX="65.0" layoutY="75.0" prefHeight="114.0" prefWidth="176.0" styleClass="fix" text="JavaFX Demo" textAlignment="CENTER" textFill="WHITE">
                <font>
