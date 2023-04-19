@@ -357,69 +357,69 @@
                                                       <RowConstraints prefHeight="50" vgrow="SOMETIMES" />
                                                   </rowConstraints>
                                                   <children>
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="星期一" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="0" text="星期二" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="0" text="星期三" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="0" text="星期四" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="0" text="星期五" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Monday" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Tuesday" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Wednesday" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Thursday" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Friday" />
 
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="08:00 - 08:45" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="08:50 - 09:35" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="09:50 - 10:35" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="10:40 - 11:25" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="11:30 - 12:15" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="6" text="13:00 - 13:45" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="7" text="13:50 - 14:35" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="8" text="14:45 - 15:30" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="9" text="15:40 - 16:25" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="10" text="16:35 - 17:20" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="11" text="17:25 - 18:10" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="12" text="18:30 - 19:15" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="13" text="19:15 - 20:05" />
-                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="14" text="20:10 - 20:55" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="08:00 - 08:45" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="08:50 - 09:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="09:50 - 10:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="10:40 - 11:25" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="5" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="11:30 - 12:15" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="6" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="13:00 - 13:45" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="7" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="13:50 - 14:35" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="8" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="14:45 - 15:30" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="9" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="15:40 - 16:25" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="10"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="16:35 - 17:20" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="11"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="17:25 - 18:10" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="12"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="18:30 - 19:15" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="13"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="19:15 - 20:05" />
+                                                      <Label GridPane.columnIndex="0" GridPane.rowIndex="14"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="20:10 - 20:55" />
 
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="2" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="3" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="4" text="网络安全法" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="6" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="7" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="12" text="软件工程" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="13" text="软件工程" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-fill: -text-color;" text="Network Security Law" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="6" style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="7" style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Software Engineering" />
+                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
 
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="2" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="8" text="个人发展规划" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="9" text="个人发展规划" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="10" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="11" text="物流与供应链管理" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="12" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="8"  style="-fx-fill: -text-color;" text="Personal Development Planning" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="9"  style="-fx-fill: -text-color;" text="Personal Development Planning" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="10" style="-fx-fill: -text-color;"  text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="11" style="-fx-fill: -text-color;"  text="Computer Science" />
+                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Computer Science" />
 
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="1" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="2" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="3" text="网络安全法" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="4" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="5" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="12" text="软件工程" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="13" text="软件工程" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="14" text="软件工程" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Network Security Law" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="4"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="5"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Software Engineering" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
+                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="14" style="-fx-fill: -text-color;"  text="Software Engineering" />
 
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="1" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="2" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="3" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="7" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="10" text="物流与供应链管理" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="11" text="物流与供应链管理" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="12" text="物流与供应链管理" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="7"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="10" style="-fx-fill: -text-color;"  text="Computer Science" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="11" style="-fx-fill: -text-color;"  text="Computer Science" />
+                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Computer Science" />
 
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="1" text="移动互联网" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="2" text="移动互联网" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="3" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="4" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="5" text="知识产权基础" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="6" text="体育专项" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="7" text="体育专项" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="13" text="软件工程" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="14" text="软件工程" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Mobile Internet" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Mobile Internet" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="4"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="5"  style="-fx-fill: -text-color;" text="Intellectual Property" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="6"  style="-fx-fill: -text-color;" text="Sports Special" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="7"  style="-fx-fill: -text-color;" text="Sports Special" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
+                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="14" style="-fx-fill: -text-color;"  text="Software Engineering" />
 
                                                   </children>
                                               </GridPane>
