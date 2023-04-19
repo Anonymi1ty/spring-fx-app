@@ -61,15 +61,15 @@
                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                                      </rowConstraints>
                                      <Label style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="age :" GridPane.rowIndex="1"/>
-                                     <Label fx:id="age" style="-fx-fill: -text-color;" styleClass="h4" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                                     <Label fx:id="age" style="-fx-fill: -text-color;" styleClass="h6" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
                                          <Label style="-fx-fill: -text-color;-fx-font-weight: bold" styleClass="h4" text="major :" GridPane.rowIndex="2"/>
-                                     <Label fx:id="major" style="-fx-fill: -text-color;" styleClass="h4" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                                     <Label fx:id="major" style="-fx-fill: -text-color;" styleClass="h6" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
                                          <Label style="-fx-fill: -text-color;-fx-font-weight: bold" styleClass="h4" text="College :" GridPane.rowIndex="3"/>
-                                     <Label fx:id="College" style="-fx-fill: -text-color;" styleClass="h4" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                                     <Label fx:id="College" style="-fx-fill: -text-color;" styleClass="h6" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
                                          <Label style="-fx-fill: -text-color;-fx-font-weight: bold" styleClass="h4" text="gpa :" GridPane.rowIndex="4"/>
-                                     <Label fx:id="gpa" style="-fx-fill: -text-color;" styleClass="h4" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                                     <Label fx:id="gpa" style="-fx-fill: -text-color;" styleClass="h6" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
                                          <Label style="-fx-fill: -text-color;-fx-font-weight: bold" styleClass="h4" text="ranking :" GridPane.rowIndex="5"/>
-                                     <Label fx:id="rank" style="-fx-fill: -text-color;" styleClass="h4" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                                     <Label fx:id="rank" style="-fx-fill: -text-color;" styleClass="h6" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
 <!--                                    <GridPane>-->
 <!--                                       <columnConstraints>-->
 <!--                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />-->

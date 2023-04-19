@@ -59,6 +59,7 @@ public class ProfileController extends BaseController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        // 获取学生信息
         Student studentInfo = getStudentInfo();
 
         note.textProperty().bind(rating.ratingProperty().asString(Locale.ENGLISH, "%.2f"));
@@ -66,8 +67,8 @@ public class ProfileController extends BaseController implements Initializable {
         age.setText(String.valueOf(studentInfo.getAge()));
         major.setText(studentInfo.getMajor());
         College.setText("Queen Mary");
-        gpa.setText("gpa : "+studentInfo.getGpa());
-        rank.setText("rank : "+studentInfo.getRank());
+        gpa.setText(String.valueOf(studentInfo.getGpa()));
+        rank.setText(String.valueOf(studentInfo.getRank()));
         fullName.setText(studentInfo.getName());
         grade.setText("Junior");
         position.setText(studentInfo.getPosition().get(0) + "\n" + studentInfo.getPosition().get(1));
