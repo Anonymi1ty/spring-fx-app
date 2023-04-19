@@ -50,38 +50,38 @@
     {
       "Company Name": "Tencent",
       "Position": "Cashier",
-      "time": "2022.6-2022.8"
+      "Time": "2022.6-2022.8"
     },
     {
-      "Activity": "Beijing Winter Olympic Games",
+      "Company Name": "Beijing Winter Olympic Games",
       "Position": "Volunteer",
-      "time": "2022.1-2022.3"
+      "Time": "2022.1-2022.3"
     }
   ],
   "Awards": [
     {
       "Competition Name": "U.S. college modeling competition",
       "Award": "First Prize",
-      "time": "2023.5.15"
+      "Time": "2023.5.15"
     },
     {
       "Competition Name": "National University Mathematics Competition",
       "Award": "First Prize",
-      "time": "2023.6.20"
+      "Time": "2023.6.20"
     }
   ],
   "PersonalProjects": [
     {
       "Project Name": "A website for the school",
-      "time": "2022.9-2022.12",
+      "Time": "2022.9-2022.12",
       "Description": "A website for the school to provide information for students and teachers",
-      "link": "https://www.sadadriuhiasod.com"
+      "Link": "https://www.sadadriuhiasod.com"
     },
     {
       "Project Name": "A website for the airport",
-      "time": "2021.9-2021.10",
+      "Time": "2021.9-2021.10",
       "Description": "A website for the airport to provide information for passengers",
-      "link": "https://www.sadadry.com"
+      "Link": "https://www.sadadry.com"
     }
   ]
 }

@@ -31,6 +31,8 @@ public class JsonUtilsTest {
         Student testStringToJson = jsonToJavaBean(jsonString1, Student.class);
         System.out.println("----------------------------------------------------------------------");
         System.out.println(testStringToJson);
+        System.out.println("----------------------------------------------------------------------");
+        System.out.println(testStringToJson.getWorkExperience().get(0).get("Company Name"));
     }
     @Test
     public void testGetStudentInfo() {
