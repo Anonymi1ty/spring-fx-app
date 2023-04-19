@@ -6,8 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
-import static com.pdai.javafx.app.utils.JsonUtils.getJson;
-import static com.pdai.javafx.app.utils.JsonUtils.jsonToJavaBean;
+import static com.pdai.javafx.app.utils.JsonUtils.*;
 
 public class JsonUtilsTest {
     @Test
@@ -32,5 +31,10 @@ public class JsonUtilsTest {
         Student testStringToJson = jsonToJavaBean(jsonString1, Student.class);
         System.out.println("----------------------------------------------------------------------");
         System.out.println(testStringToJson);
+    }
+    @Test
+    public void testGetStudentInfo() {
+        Student student = getStudentInfo();
+        System.out.println(student);
     }
 }
