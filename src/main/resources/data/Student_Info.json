@@ -27,7 +27,60 @@
     "Business Management": {
       "grade": "95",
       "year": "2021+"
+    },
+    "Economics": {
+      "grade": "96",
+      "year": "2021+"
+    },
+    "Computer Architecture": {
+      "grade": "98",
+      "year": "2021-"
+    },
+    "Operating System": {
+      "grade": "99",
+      "year": "2021-"
+    },
+    "Computer Network": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Computer Organization": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Introduction to Computer": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Calculus": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Linear Algebra": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Discrete Mathematics": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "English": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Data Structure": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Data Mining": {
+      "grade": "100",
+      "year": "2021-"
+    },
+    "Database": {
+      "grade": "100",
+      "year": "2021-"
     }
+
   },
   "PersonalPlanning": {
     "Obtain the qualification of excellent fresh undergraduate graduates to be exempted from studying for master's degree": "2023.1-2023.6",
