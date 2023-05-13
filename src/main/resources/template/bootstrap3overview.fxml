@@ -40,9 +40,9 @@
                     <String fx:value="btn"/>
                 </styleClass>
             </Button>
-            <Button mnemonicParsing="false" text=".info">
+            <Button mnemonicParsing="false" text=".Info">
                 <styleClass>
-                    <String fx:value="info"/>
+                    <String fx:value="Info"/>
                     <String fx:value="action-btn"/>
                 </styleClass>
             </Button>
@@ -80,9 +80,9 @@
                     <String fx:value="middle"/>
                 </styleClass>
             </Button>
-            <Button mnemonicParsing="false" text=".info.last">
+            <Button mnemonicParsing="false" text=".Info.last">
                 <styleClass>
-                    <String fx:value="info"/>
+                    <String fx:value="Info"/>
                     <String fx:value="last"/>
                 </styleClass>
             </Button>
@@ -140,7 +140,7 @@
                     </items>
                     <styleClass>
                         <String fx:value="first"/>
-                        <String fx:value="info"/>
+                        <String fx:value="Info"/>
                         <String fx:value="action-btn"/>
                     </styleClass>
                     <VBox.margin>
@@ -269,13 +269,13 @@
                     <MenuItem mnemonicParsing="false" text="Action 2"/>
                 </items>
             </MenuButton>
-            <MenuButton mnemonicParsing="false" text=".info.first">
+            <MenuButton mnemonicParsing="false" text=".Info.first">
                 <items>
                     <MenuItem mnemonicParsing="false" text="Action 1"/>
                     <MenuItem mnemonicParsing="false" text="Action 2"/>
                 </items>
                 <styleClass>
-                    <String fx:value="info"/>
+                    <String fx:value="Info"/>
                     <String fx:value="first"/>
                 </styleClass>
             </MenuButton>
@@ -326,13 +326,13 @@
                     <String fx:value="middle"/>
                 </styleClass>
             </SplitMenuButton>
-            <SplitMenuButton mnemonicParsing="false" text=".info">
+            <SplitMenuButton mnemonicParsing="false" text=".Info">
                 <items>
                     <MenuItem mnemonicParsing="false" text="Action 1"/>
                     <MenuItem mnemonicParsing="false" text="Action 2"/>
                 </items>
                 <styleClass>
-                    <String fx:value="info"/>
+                    <String fx:value="Info"/>
                     <String fx:value="action-btn"/>
                 </styleClass>
             </SplitMenuButton>
@@ -369,7 +369,7 @@
             </Button>
             <Button mnemonicParsing="false" text=".sm">
                 <styleClass>
-                    <String fx:value="info"/>
+                    <String fx:value="Info"/>
                     <String fx:value="sm"/>
                 </styleClass>
             </Button>
@@ -462,9 +462,9 @@
                     <Insets left="5.0" right="5.0"/>
                 </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" styleClass="info" text=".info">
+            <Button mnemonicParsing="false" styleClass="Info" text=".Info">
                 <tooltip>
-                    <Tooltip styleClass="info" text="info"/>
+                    <Tooltip styleClass="Info" text="Info"/>
                 </tooltip>
                 <HBox.margin>
                     <Insets right="5.0"/>
@@ -686,8 +686,8 @@
         <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.86"/>
         <Label text=".success"/>
         <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.69" styleClass="success"/>
-        <Label text=".info"/>
-        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.56" styleClass="info"/>
+        <Label text=".Info"/>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.56" styleClass="Info"/>
         <Label text=".warning"/>
         <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.41" styleClass="warning"/>
         <Label text=".danger"/>
@@ -716,7 +716,7 @@
                 </TableView>
             </AnchorPane>
         </TitledPane>
-        <TitledPane prefHeight="100.0" styleClass="info" text="Info">
+        <TitledPane prefHeight="100.0" styleClass="Info" text="Info">
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0"/>
         </TitledPane>
         <TitledPane prefHeight="100.0" styleClass="warning" text="Warning">
@@ -732,7 +732,7 @@
                             text="accordion 1">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
                 </TitledPane>
-                <TitledPane animated="false" styleClass="info" text="accordion 2">
+                <TitledPane animated="false" styleClass="Info" text="accordion 2">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
                 </TitledPane>
                 <TitledPane animated="false" text="accordion 3">

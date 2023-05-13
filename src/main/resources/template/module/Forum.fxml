@@ -18,11 +18,6 @@
         <ScrollPane fitToWidth="true" prefHeight="1000.0" prefWidth="800.0">
             <VBox prefHeight="1000.0" prefWidth="800.0" spacing="10.0" style="-fx-background-color: #eeeeee;" />
             <GridPane fx:id="messageContainer" alignment="CENTER" hgap="5" vgap="5" >
-                <columnConstraints>
-                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
-                </columnConstraints>
             </GridPane>
         </ScrollPane>
         </children>

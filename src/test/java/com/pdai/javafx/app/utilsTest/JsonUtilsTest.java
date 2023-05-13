@@ -1,10 +1,11 @@
 package com.pdai.javafx.app.utilsTest;
 
-import com.pdai.javafx.app.poto.Info;
+import com.pdai.javafx.app.poto.ForumInfo;
 import com.pdai.javafx.app.poto.Student;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 import static com.pdai.javafx.app.utils.JsonUtils.*;
 
@@ -41,7 +42,7 @@ public class JsonUtilsTest {
     }
     @Test
     public void InfoTest(){
-        Info info = getInfo();
-        System.out.println(info);
+        List<ForumInfo> forumInfos = getInfo();
+        System.out.println(forumInfos);
     }
 }

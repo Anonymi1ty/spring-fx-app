@@ -367,13 +367,14 @@
                                              </children>
                                              <styleClass>
                                                 <String fx:value="scale" />
-                                                <String fx:value="btn-info" />
+                                                <String fx:value="btn-Info" />
+
                                              </styleClass>
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor>
                                           </VBox>
-                                          <Label layoutX="13.0" layoutY="35.0" minHeight="5.0" prefHeight="5.0" prefWidth="238.0" styleClass="btn-info" />
+                                          <Label layoutX="13.0" layoutY="35.0" minHeight="5.0" prefHeight="5.0" prefWidth="238.0" styleClass="btn-Info" />
                                           <Label alignment="CENTER" layoutX="17.0" layoutY="40.0" prefHeight="22.0" prefWidth="229.0" style="-fx-text-fill: -text-color;" styleClass="h5" text="Total Items in stock" textAlignment="RIGHT">
                                              <font>
                                                 <Font name="Roboto Regular" size="14.0" />

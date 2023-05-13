@@ -1,15 +1,14 @@
 package com.pdai.javafx.app.utils;
 
-import com.pdai.javafx.app.poto.Info;
+import com.google.gson.reflect.TypeToken;
+import com.pdai.javafx.app.poto.ForumInfo;
 import com.pdai.javafx.app.poto.Student;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.List;
 
 @ComponentScan
 @Component
@@ -31,6 +30,20 @@ public class JsonUtils {
         }
         reader.close();
         return stringBuilder.toString();
+    }
+
+    /**
+     * 将Java对象转化为Json字符串
+     * @param object Java对象
+     * @return Json字符串
+     */
+    public static void javaBeanToJsonFile(Object object) throws IOException {
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(object);
+        //  写入到Forum.json文件中
+        BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/data/Forum.json"));
+        writer.write(jsonString);
+        writer.close();
     }
 
     /**
@@ -60,13 +73,19 @@ public class JsonUtils {
         Student student = jsonToJavaBean(jsonString, Student.class);
         return student;
     }
-    public static Info getInfo() {
+
+    /**
+     * （复用方法）获取Forum.json中的数据，返回一个Info对象的List
+     * @return List<ForumInfo>
+     */
+    public static List<ForumInfo> getInfo() {
         String jsonString;
         try {
             jsonString = getJson("src/main/resources/data/Forum.json");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return jsonToJavaBean(jsonString, Info.class);
+        Gson gson = new Gson();
+        return gson.fromJson(jsonString, new TypeToken<List<ForumInfo>>(){}.getType());
     }
 }
