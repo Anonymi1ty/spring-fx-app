@@ -1,4 +1,4 @@
-package com.pdai.javafx.app.proto;
+package com.pdai.javafx.app.poto;
 
 import lombok.Data;
 

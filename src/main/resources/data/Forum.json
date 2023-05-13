@@ -1,52 +1,77 @@
-{
-  "Consulting lab related content": {
-    "description":"Consulting lab related content",
-    "building owners":"John",
-    "Date": "2019-01-01",
-    "follow up": [
-      {
-        "date": "2019-01-01",
-        "Content": "Follow up 1",
-        "building owners": "Bill",
-        "status": "open"
-      },
-      {
-        "date": "2019-01-02",
-        "Content": "Follow up 2",
-        "building owners": "Dave",
-        "status": "open"
-      },
-      {
-        "date": "2019-01-03",
-        "Content": "Follow up 3",
-        "building owners": "Tom",
-        "status": "open"
-      }
-    ]
+[
+  {
+    "id": 1,
+    "username": "Alice",
+    "message": "Hello everyone!"
   },
-  "Consulting school related content": {
-    "description":"Consulting school related content",
-    "building owners":"Pol",
-    "Date": "2019-01-02",
-    "follow up": [
-      {
-        "date": "2019-01-03",
-        "Content": "Follow up 1",
-        "building owners": "Bill",
-        "status": "open"
-      },
-      {
-        "date": "2019-01-04",
-        "Content": "Follow up 2",
-        "building owners": "Dave",
-        "status": "open"
-      },
-      {
-        "date": "2019-01-05",
-        "Content": "Follow up 3",
-        "building owners": "Tom",
-        "status": "open"
-      }
-    ]
+  {
+    "id": 2,
+    "username": "Bob",
+    "message": "What's up?"
+  },
+  {
+    "id": 3,
+    "username": "Charlie",
+    "message": "I'm new here. Nice to meet you all!"
+  },
+  {
+    "id": 4,
+    "username": "David",
+    "message": "I have a question. Can anyone help me?"
+  },
+  {
+    "id": 5,
+    "username": "Emily",
+    "message": "I like this forum. It's so friendly and helpful."
+  },
+  {
+    "id": 6,
+    "username": "Frank",
+    "message": "I'm a Java developer. Anyone else here working with Java?"
+  },
+  {
+    "id": 7,
+    "username": "Grace",
+    "message": "I'm looking for a job in web development. Any advice?"
+  },
+  {
+    "id": 8,
+    "username": "Henry",
+    "message": "I'm interested in machine learning. Can anyone recommend some good resources?"
+  },
+  {
+    "id": 9,
+    "username": "Isabel",
+    "message": "I'm a college student studying computer science. What are some good programming projects for beginners?"
+  },
+  {
+    "id": 10,
+    "username": "Jack",
+    "message": "I just finished building my first website. Check it out: www.example.com."
+  },
+  {
+    "id": 11,
+    "username": "Karen",
+    "message": "I'm struggling with CSS. Does anyone have any tips or tricks?"
+  },
+  {
+    "id": 12,
+    "username": "Larry",
+    "message": "I'm a freelance web designer. Looking for new clients. Contact me if you're interested!"
+  },
+  {
+    "id": 13,
+    "username": "Molly",
+    "message": "I'm interested in learning Python. What are some good online courses?"
+  },
+  {
+    "id": 14,
+    "username": "Nancy",
+    "message": "I'm a UX designer. Can anyone recommend some good design tools?"
+  },
+  {
+    "id": 15,
+    "username": "Oliver",
+    "message": "I'm a software engineer. Anyone else here interested in functional programming?"
   }
-}
+]

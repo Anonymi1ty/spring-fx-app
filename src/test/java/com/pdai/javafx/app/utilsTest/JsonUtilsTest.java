@@ -1,8 +1,7 @@
 package com.pdai.javafx.app.utilsTest;
 
-import com.pdai.javafx.app.proto.Student;
+import com.pdai.javafx.app.poto.Student;
 import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 

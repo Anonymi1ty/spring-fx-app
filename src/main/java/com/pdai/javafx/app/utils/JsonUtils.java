@@ -1,13 +1,11 @@
 package com.pdai.javafx.app.utils;
 
-import com.pdai.javafx.app.proto.Student;
+import com.pdai.javafx.app.poto.Student;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 @ComponentScan

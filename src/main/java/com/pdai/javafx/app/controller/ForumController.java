@@ -22,4 +22,5 @@ public class ForumController extends BaseController implements Initializable {
     public void start(Stage primaryStage) throws Exception {
 
     }
+
 }

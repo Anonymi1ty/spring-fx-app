@@ -1,17 +1,13 @@
 package com.pdai.javafx.app.controller;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import com.pdai.javafx.app.proto.Student;
+import com.pdai.javafx.app.poto.Student;
 import javafx.application.HostServices;
-import javafx.geometry.VPos;
-import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.controlsfx.control.Rating;
 import org.springframework.stereotype.Component;
@@ -19,48 +15,9 @@ import org.springframework.stereotype.Component;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
 
-import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
-import com.pdai.javafx.app.proto.Student;
 import javafx.scene.layout.*;
-import javafx.stage.Stage;
-import org.controlsfx.control.PopOver;
-import org.springframework.stereotype.Component;
 
-import com.jfoenix.controls.JFXBadge;
-import com.jfoenix.controls.JFXButton;
-import com.pdai.javafx.app.fx.FxmlView;
-import com.pdai.javafx.app.fx.StageManager;
-import com.pdai.javafx.app.utils.SpringUtils;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.Event;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.geometry.HPos;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TitledPane;
-import sun.java2d.cmm.Profile;
-
-import javax.xml.soap.Text;
-
-import static com.pdai.javafx.app.utils.JsonUtils.getJson;
 import static com.pdai.javafx.app.utils.JsonUtils.getStudentInfo;
 
 @Component

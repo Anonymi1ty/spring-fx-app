@@ -6,10 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
-import com.pdai.javafx.app.proto.Student;
+import com.pdai.javafx.app.poto.Student;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import org.controlsfx.control.PopOver;
 import org.springframework.stereotype.Component;
