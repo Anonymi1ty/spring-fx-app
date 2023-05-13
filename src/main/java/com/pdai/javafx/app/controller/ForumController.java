@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 
 @Component
 public class ForumController extends BaseController implements Initializable {
+
     @FXML private Button sendButton;
 
     @Override
@@ -21,6 +22,10 @@ public class ForumController extends BaseController implements Initializable {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+    }
+    @FXML
+    public void sendMessage() {
+        System.out.println("sendButtonAction");
     }
 
 }
