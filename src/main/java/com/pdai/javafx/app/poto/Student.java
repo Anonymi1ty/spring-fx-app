@@ -21,5 +21,6 @@ public class Student {
     private List<Map<String,String>> WorkExperience;
     private List<Map<String,String>> Awards;
     private List<Map<String,String>> PersonalProjects;
+    private List<Map<String,String>> notifaction;
 
 }

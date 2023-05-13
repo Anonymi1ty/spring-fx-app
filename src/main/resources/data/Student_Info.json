@@ -136,5 +136,20 @@
       "Description": "A website for the airport to provide information for passengers",
       "Link": "https://www.sadadry.com"
     }
-  ]
+  ],
+  "notifaction": [
+    {
+    "title": "明天举行期末考试",
+    "content": "请各位同学务必准时到达考场，携带好所需考试用具，祝大家考试顺利！",
+    "date": "2023-05-14"
+  }, {
+    "title": "图书馆闭馆通知",
+    "content": "由于图书馆系统升级，本馆将于明天起闭馆三天，给大家带来的不便敬请谅解。",
+    "date": "2023-05-13"
+  }, {
+    "title": "大学生创新创业大赛报名开始",
+    "content": "为鼓励大学生创新创业，我校将于下周举行大学生创新创业大赛，欢迎有志于创新的同学积极报名参加！",
+    "date": "2023-05-15"
+  }
+    ]
 }
