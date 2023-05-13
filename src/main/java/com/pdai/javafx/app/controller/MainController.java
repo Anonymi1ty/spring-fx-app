@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
 import com.pdai.javafx.app.proto.Student;
 import javafx.scene.layout.*;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import org.controlsfx.control.PopOver;
 import org.springframework.stereotype.Component;
@@ -271,8 +272,8 @@ public class MainController extends BaseController implements Initializable {
 	}
 
 	@FXML
-	private void mytest() {
-		updateBody(FxmlView.MYTEST);
+	private void Forum() {
+		updateBody(FxmlView.Forum);
 	}
 
 	private void updateBody(FxmlView view) {

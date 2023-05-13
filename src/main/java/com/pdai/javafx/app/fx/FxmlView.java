@@ -41,15 +41,15 @@ public enum FxmlView {
         }
 
     },
-    MYTEST {
+    Forum {
         @Override
         public String title() {
-            return getStringFromResourceBundle("module.mytest.title");
+            return getStringFromResourceBundle("module.Forum.title");
         }
 
         @Override
         public String fxml() {
-            return "/template/module/mytest.fxml";
+            return "/template/module/Forum.fxml";
         }
 
     }
