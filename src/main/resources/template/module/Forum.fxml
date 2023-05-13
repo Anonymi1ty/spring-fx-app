@@ -10,12 +10,20 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <StackPane prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pdai.javafx.app.controller.ForumController">
     <VBox prefHeight="1000.0" prefWidth="800.0">
         <children>
         <ScrollPane fitToWidth="true" prefHeight="1000.0" prefWidth="800.0">
-            <VBox fx:id="messageContainer" prefHeight="1000.0" prefWidth="800.0" spacing="10.0" style="-fx-background-color: #eeeeee;" />
-
+            <VBox prefHeight="1000.0" prefWidth="800.0" spacing="10.0" style="-fx-background-color: #eeeeee;" />
+            <GridPane fx:id="messageContainer" alignment="CENTER" hgap="5" vgap="5" >
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                    <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                </columnConstraints>
+            </GridPane>
         </ScrollPane>
         </children>
         <children>

@@ -1,5 +1,6 @@
 package com.pdai.javafx.app.utils;
 
+import com.pdai.javafx.app.poto.Info;
 import com.pdai.javafx.app.poto.Student;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
@@ -8,6 +9,8 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+
 @ComponentScan
 @Component
 public class JsonUtils {
@@ -56,5 +59,14 @@ public class JsonUtils {
         }
         Student student = jsonToJavaBean(jsonString, Student.class);
         return student;
+    }
+    public static Info getInfo() {
+        String jsonString;
+        try {
+            jsonString = getJson("src/main/resources/data/Forum.json");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return jsonToJavaBean(jsonString, Info.class);
     }
 }

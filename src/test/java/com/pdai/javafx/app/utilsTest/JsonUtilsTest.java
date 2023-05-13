@@ -1,5 +1,6 @@
 package com.pdai.javafx.app.utilsTest;
 
+import com.pdai.javafx.app.poto.Info;
 import com.pdai.javafx.app.poto.Student;
 import org.junit.Test;
 
@@ -37,5 +38,10 @@ public class JsonUtilsTest {
     public void testGetStudentInfo() {
         Student student = getStudentInfo();
         System.out.println(student);
+    }
+    @Test
+    public void InfoTest(){
+        Info info = getInfo();
+        System.out.println(info);
     }
 }
