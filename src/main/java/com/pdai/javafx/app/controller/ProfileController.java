@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 
 import com.pdai.javafx.app.proto.Student;
 import javafx.application.HostServices;
+import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.GridPane;
@@ -55,6 +56,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TitledPane;
+import sun.java2d.cmm.Profile;
 
 import javax.xml.soap.Text;
 
@@ -117,6 +119,7 @@ public class ProfileController extends BaseController implements Initializable {
         fullName.setText(studentInfo.getName());
         grade.setText("Junior");
         position.setText(studentInfo.getPosition().get(0) + "\n" + studentInfo.getPosition().get(1));
+
         Internship1.setText(studentInfo.getWorkExperience().get(0).get("Company Name"));
         Internship2.setText(studentInfo.getWorkExperience().get(1).get("Company Name"));
         InternshipPosition1.setText(studentInfo.getWorkExperience().get(0).get("Position"));
@@ -138,9 +141,13 @@ public class ProfileController extends BaseController implements Initializable {
         ProjectTime1.setText(studentInfo.getPersonalProjects().get(0).get("Time"));
         ProjectTime2.setText(studentInfo.getPersonalProjects().get(1).get("Time"));
 
+
+
         i=1;
         studentInfo.getPastCourses().forEach((key, value) -> {
-
+            RowConstraints rowConstraints = new RowConstraints(30);
+            rowConstraints.setVgrow(Priority.SOMETIMES);
+            Grade.getRowConstraints().add(rowConstraints);
             Label courseName = new Label(key);
             courseName.setStyle("-fx-fill: -text-color;-fx-font-weight: bold;");
             Grade.add(courseName, 0, i);

@@ -242,7 +242,7 @@
                                            <ScrollPane fitToHeight="true" fitToWidth="true">
                                                <VBox>
                                                <children>
-                                          <GridPane prefHeight="700.0" prefWidth="579.0" alignment="CENTER">
+                                          <GridPane fx:id="Portfolio" prefHeight="700.0" prefWidth="579.0" alignment="CENTER">
                                             <columnConstraints>
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" />
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="443.0" minWidth="10.0" />
@@ -339,7 +339,7 @@
                                       <ScrollPane fitToWidth="true" prefHeight="1500">
                                           <VBox prefWidth="1000" prefHeight="2000">
                                               <children>
-                                              <GridPane alignment="CENTER" hgap="5" vgap="5" >
+                                              <GridPane fx:id="ClassSchedule" alignment="CENTER" hgap="5" vgap="5" >
                                                   <columnConstraints>
                                                       <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                       <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
@@ -455,23 +455,7 @@
                                                               </columnConstraints>
                                                               <rowConstraints>
                                                                   <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
+
                                                               </rowConstraints>
                                                               <children>
                                                                   <Label GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Course" />
