@@ -348,6 +348,7 @@ public class MainController extends BaseController implements Initializable {
 			for ( int i=1 ; i<RecentEvents.size()+1;i++){
 				main.add(RecentEvents.get(i-1), 0, i);
 			}
+			main.setAlignment(Pos.CENTER);
 
 
 
@@ -437,6 +438,7 @@ public class MainController extends BaseController implements Initializable {
 			for ( int i=1 ; i<RecentEvents.size()+1;i++){
 				main.add(RecentEvents.get(i-1), 0, i);
 			}
+			main.setAlignment(Pos.CENTER);
 
 
 

@@ -237,99 +237,64 @@
                           <!--可选信息展示-->
                             <Tab closable="false" text="Portfolio">
                                  <content>
-                                    <VBox prefHeight="1000.0" prefWidth="1000.0">
+                                     <ScrollPane fitToWidth="true" prefHeight="2000.0" prefWidth="1200.0">
+                                    <VBox prefHeight="1000.0" prefWidth="1600.0">
                                        <children>
-                                           <ScrollPane fitToHeight="true" fitToWidth="true">
-                                               <VBox>
+                                           <HBox alignment="CENTER" spacing="10.0">
+                                                  <children>
+                                                        <Label styleClass="h3" text="Work Experience" alignment="CENTER" prefWidth="1200"/>
+                                                  </children>
                                                <children>
-                                          <GridPane fx:id="Portfolio" prefHeight="700.0" prefWidth="579.0" alignment="CENTER">
-                                            <columnConstraints>
-                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" />
-                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="443.0" minWidth="10.0" />
-                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="443.0" minWidth="10.0" />
-                                            </columnConstraints>
-                                            <rowConstraints>
-                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                            </rowConstraints>
-                                             <children>
-<!--                                                 居中-->
-                                                <Label styleClass="h3" text="Work Experience" GridPane.rowIndex="0" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Practical and Internship :" GridPane.rowIndex="1" />
-                                                <Label styleClass="h4" fx:id="Internship1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                                 <Label styleClass="h4" fx:id="Internship2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2"  GridPane.rowIndex="1" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Position :" GridPane.rowIndex="2" />
-                                                 <Label styleClass="h4" fx:id="InternshipPosition1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                                 <Label styleClass="h4" fx:id="InternshipPosition2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Time Period :" GridPane.rowIndex="3" />
-                                                 <Label styleClass="h4" fx:id="InternshipTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                                 <Label styleClass="h4" fx:id="InternshipTime2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-
-<!--                                                 居中-->
-                                                 <Label styleClass="h3" text="Awards" GridPane.rowIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Competition Name :" GridPane.rowIndex="7" />
-                                                 <Label styleClass="h4" fx:id="CompetitionName1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                                                 <Label styleClass="h4" fx:id="CompetitionName2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Award Level :" GridPane.rowIndex="8" />
-                                                 <Label styleClass="h4" fx:id="AwardLevel1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                                                 <Label styleClass="h4" fx:id="AwardLevel2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Time :" GridPane.rowIndex="9" />
-                                                 <Label styleClass="h4" fx:id="AwardTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                                                 <Label styleClass="h4" fx:id="AwardTime2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-
-<!--                                                 居中-->
-                                                 <Label styleClass="h3" text="Personal Projects" GridPane.rowIndex="12" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Project Name :" GridPane.rowIndex="13" />
-                                                 <Label styleClass="h4" fx:id="ProjectName1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-                                                 <Label styleClass="h4" fx:id="ProjectName2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="13" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Description :" GridPane.rowIndex="14" />
-                                                 <Label styleClass="h4" fx:id="ProjectDescription1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-                                                 <Label styleClass="h4" fx:id="ProjectDescription2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Link :" GridPane.rowIndex="15" />
-
-                                                 <Hyperlink styleClass="h4" fx:id="ProjectLink1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-                                                 <Hyperlink styleClass="h4" fx:id="ProjectLink2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="15" />
-
-
-                                                 <Label styleClass="h4" style="-fx-font-weight: bold; -fx-text-fill: -text-color;" text="Time :" GridPane.rowIndex="16" />
-                                                 <Label styleClass="h4" fx:id="ProjectTime1" style="-fx-text-fill: -text-color;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-                                                 <Label styleClass="h4" fx:id="ProjectTime2" style="-fx-text-fill: -text-color;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
-
-                                             </children>
-                                          </GridPane>
+                                                   <Button mnemonicParsing="false" onMouseClicked="#WorkExperienceAdd" prefHeight="70.0" prefWidth="100.0" text="Add" AnchorPane.bottomAnchor="15.0" alignment="CENTER"/>
                                                </children>
-                                               </VBox>
-                                           </ScrollPane>
+                                           </HBox>
                                        </children>
+                                        <children>
+                                            <ScrollPane fitToWidth="true" prefHeight="1000.0" prefWidth="1200.0">
+                                                <VBox prefHeight="1000.0" prefWidth="1200.0" spacing="10.0"/>
+                                                <GridPane fx:id="WorkExperience" alignment="CENTER" hgap="5" vgap="5" prefWidth="1200">
+                                                </GridPane>
+                                            </ScrollPane>
+                                        </children>
+                                        <children>
+                                            <HBox alignment="CENTER" spacing="10.0">
+                                                <children>
+                                                    <Label styleClass="h3" text="Awards" alignment="CENTER" prefWidth="1200"/>
+                                                </children>
+                                                <children>
+                                                    <Button mnemonicParsing="false" onMouseClicked="#AwardsAdd" prefHeight="70.0" prefWidth="100.0" text="Add" AnchorPane.bottomAnchor="15.0" alignment="CENTER"/>
+                                                </children>
+                                            </HBox>
+                                        </children>
+                                        <children>
+                                            <ScrollPane fitToWidth="true" prefHeight="1000.0" prefWidth="1200.0">
+                                                <VBox prefHeight="1000.0" prefWidth="1200.0" spacing="10.0"/>
+                                                <GridPane fx:id="Awards" alignment="CENTER" hgap="5" vgap="5" prefWidth="1200">
+                                                </GridPane>
+                                            </ScrollPane>
+                                        </children>
+                                        <children>
+                                            <HBox alignment="CENTER" spacing="10.0">
+                                                <children>
+                                                    <Label styleClass="h3" text="Personal Projects" alignment="CENTER" prefWidth="1200"/>
+                                                </children>
+                                                <children>
+                                                    <Button mnemonicParsing="false" onMouseClicked="#ProjectAdd" prefHeight="70.0" prefWidth="100.0" text="Add" AnchorPane.bottomAnchor="15.0" alignment="CENTER"/>
+                                                </children>
+                                            </HBox>
+                                        </children>
+                                        <children>
+                                            <ScrollPane fitToWidth="true" prefHeight="1000.0" prefWidth="1200.0">
+                                                <VBox prefHeight="1000.0" prefWidth="1200.0" spacing="10.0"/>
+                                                <GridPane fx:id="Project" alignment="CENTER" hgap="5" vgap="5" prefWidth="1200">
+                                                </GridPane>
+                                            </ScrollPane>
+                                        </children>
                                        <padding>
                                           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                                        </padding>
                                     </VBox>
+                                     </ScrollPane>
                                  </content></Tab>
                               <Tab closable="false" text="Schedule">
                                   <content>

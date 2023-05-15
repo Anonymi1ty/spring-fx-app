@@ -51,6 +51,15 @@ public class JsonUtils {
         writer.close();
     }
 
+    public static void StudentToJsonFile(Object object) throws IOException {
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(object);
+        //  写入到Forum.json文件中
+        BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/data/Student_Info.json"));
+        writer.write(jsonString);
+        writer.close();
+    }
+
     /**
      * 将Json转化为Java对象
      * @param json json字符串
