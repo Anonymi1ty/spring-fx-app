@@ -45,4 +45,5 @@ public class JsonUtilsTest {
         List<ForumInfo> forumInfos = getInfo();
         System.out.println(forumInfos);
     }
+
 }
