@@ -1,5 +1,10 @@
 package com.pdai.javafx.app.utils;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.MappingIterator;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.google.gson.reflect.TypeToken;
 import com.pdai.javafx.app.poto.ForumInfo;
 import com.pdai.javafx.app.poto.Student;
@@ -8,7 +13,7 @@ import org.springframework.stereotype.Component;
 import com.google.gson.Gson;
 
 import java.io.*;
-import java.util.List;
+import java.util.*;
 
 @ComponentScan
 @Component
@@ -87,5 +92,40 @@ public class JsonUtils {
         }
         Gson gson = new Gson();
         return gson.fromJson(jsonString, new TypeToken<List<ForumInfo>>(){}.getType());
+    }
+
+    /**
+     * 将课程表的JSON文件转化为csv文件，并且保存到src/main/resources/data/schedule.csv路径下
+     * @throws IOException
+     */
+    public static void scheduleJsonToCsv() throws IOException {
+        // 读取JSON文件
+        ObjectMapper mapper = new ObjectMapper();
+        JsonParser jsonParser = mapper.getFactory().createParser(new File("src/main/resources/data/schedule.json"));
+        Map<String, Map<String, String>> data = mapper.readValue(jsonParser, Map.class);
+
+        // 定义CSV的表头
+        Set<String> headerSet = new LinkedHashSet<>();
+        for (Map<String, String> day : data.values()) {
+            headerSet.addAll(day.keySet());
+        }
+        // 对表头进行排序，保证输出的CSV文件的表头是有序的
+        List<String> headerList = new ArrayList<>(headerSet);
+//        Collections.sort(headerList);
+
+        // 创建CSV Schema
+        CsvSchema.Builder csvSchemaBuilder = CsvSchema.builder();
+        csvSchemaBuilder.setUseHeader(true).setColumnSeparator(',');
+        for (String header : headerList) {
+            csvSchemaBuilder.addColumn(header);
+        }
+        CsvSchema csvSchema = csvSchemaBuilder.build();
+
+        // 写入CSV文件
+        CsvMapper csvMapper = new CsvMapper();
+        csvMapper.writerFor(Map.class)
+                .with(csvSchema)
+                .writeValues(new File("src/main/resources/data/schedule.csv"))
+                .writeAll(data.values());
     }
 }

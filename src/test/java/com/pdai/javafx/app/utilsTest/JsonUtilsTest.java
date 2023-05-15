@@ -45,4 +45,13 @@ public class JsonUtilsTest {
         List<ForumInfo> forumInfos = getInfo();
         System.out.println(forumInfos);
     }
+
+    @Test
+    public void testJavaBeanToJsonFile() {
+        try {
+            scheduleJsonToCsv();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
