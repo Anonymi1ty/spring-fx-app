@@ -12,6 +12,7 @@ public class Student {
     private String major;
     private double gpa;
     private int rank;
+    private String School;
 
     private String[] courses;
     private Map<String, Map<String, String>> PastCourses;
