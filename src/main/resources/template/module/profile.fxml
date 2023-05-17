@@ -331,6 +331,7 @@
                                                       <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
                                                   </rowConstraints>
                                                   <children>
+                                                      <Button GridPane.columnIndex="0" GridPane.rowIndex="0" mnemonicParsing="false" onMouseClicked="#ExportSchedule" prefHeight="70.0" prefWidth="100.0" text="Export" AnchorPane.bottomAnchor="15.0" alignment="CENTER"/>
                                                       <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Monday" />
                                                       <Label GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Tuesday" />
                                                       <Label GridPane.columnIndex="3" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="Wednesday" />
@@ -352,49 +353,6 @@
                                                       <Label GridPane.columnIndex="0" GridPane.rowIndex="13"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="19:15 - 20:05" />
                                                       <Label GridPane.columnIndex="0" GridPane.rowIndex="14"  style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h4" text="20:10 - 20:55" />
 
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-fill: -text-color;" text="Network Security Law" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="6" style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="7" style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Software Engineering" />
-                                                      <Label GridPane.columnIndex="1" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
-
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="8"  style="-fx-fill: -text-color;" text="Personal Development Planning" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="9"  style="-fx-fill: -text-color;" text="Personal Development Planning" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="10" style="-fx-fill: -text-color;"  text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="11" style="-fx-fill: -text-color;"  text="Computer Science" />
-                                                      <Label GridPane.columnIndex="2" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Computer Science" />
-
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Network Security Law" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="4"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="5"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Software Engineering" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
-                                                      <Label GridPane.columnIndex="3" GridPane.rowIndex="14" style="-fx-fill: -text-color;"  text="Software Engineering" />
-
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="7"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="10" style="-fx-fill: -text-color;"  text="Computer Science" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="11" style="-fx-fill: -text-color;"  text="Computer Science" />
-                                                      <Label GridPane.columnIndex="4" GridPane.rowIndex="12" style="-fx-fill: -text-color;"  text="Computer Science" />
-
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="1"  style="-fx-fill: -text-color;" text="Mobile Internet" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="2"  style="-fx-fill: -text-color;" text="Mobile Internet" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="3"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="4"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="5"  style="-fx-fill: -text-color;" text="Intellectual Property" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="6"  style="-fx-fill: -text-color;" text="Sports Special" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="7"  style="-fx-fill: -text-color;" text="Sports Special" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="13" style="-fx-fill: -text-color;"  text="Software Engineering" />
-                                                      <Label GridPane.columnIndex="5" GridPane.rowIndex="14" style="-fx-fill: -text-color;"  text="Software Engineering" />
-
                                                   </children>
                                               </GridPane>
                                               </children>
@@ -409,28 +367,40 @@
                                       <VBox prefWidth="1000" prefHeight="1000">
                                           <children>
                                               <!--                                          fitToHeight="true" fitToWidth="true-->
-                                              <ScrollPane fitToWidth="true" prefHeight="1500">
-                                                  <VBox prefWidth="1000" prefHeight="2000">
+                                                  <VBox prefWidth="1000">
                                                       <children>
+                                                          <GridPane alignment="CENTER" hgap="5" vgap="5" >
+                                                              <columnConstraints>
+                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints minWidth="40" hgrow="ALWAYS" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                  <RowConstraints vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                              <children>
+                                                                  <Label GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Course" />
+                                                                  <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Grade" />
+                                                                  <Label GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="year" />
+                                                                  <Button GridPane.columnIndex="3" GridPane.rowIndex="0" mnemonicParsing="false" onMouseClicked="#GradeAdd" prefHeight="70.0" prefWidth="100.0" text="Add" AnchorPane.bottomAnchor="15.0" alignment="CENTER"/>
+                                                              </children>
+                                                          </GridPane>
+                                                      </children>
+                                                      <children>
+                                                          <ScrollPane fitToWidth="true" prefHeight="1500">
                                                           <GridPane fx:id="Grade" alignment="CENTER" hgap="5" vgap="5" >
                                                               <columnConstraints>
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                               </columnConstraints>
-                                                              <rowConstraints>
-                                                                  <RowConstraints prefHeight="100" vgrow="SOMETIMES" />
-
-                                                              </rowConstraints>
                                                               <children>
-                                                                  <Label GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Course" />
-                                                                  <Label GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="Grade" />
-                                                                  <Label GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-fill: -text-color;-fx-font-weight: bold;" styleClass="h3" text="year" />
                                                               </children>
                                                           </GridPane>
+                                                          </ScrollPane>
                                                       </children>
                                                   </VBox>
-                                              </ScrollPane>
                                           </children>
                                       </VBox>
 

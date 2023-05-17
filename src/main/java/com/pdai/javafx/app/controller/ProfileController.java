@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.*;
 
 import com.pdai.javafx.app.poto.ForumInfo;
+import com.pdai.javafx.app.poto.Schedule;
 import com.pdai.javafx.app.poto.Student;
 import javafx.application.HostServices;
 import javafx.geometry.HPos;
@@ -64,7 +65,9 @@ public class ProfileController extends BaseController implements Initializable {
     @FXML private GridPane Awards;
     @FXML private GridPane Grade;
     @FXML private GridPane Project;
+    @FXML private GridPane ClassSchedule;
     private Student studentInfo;
+    private Schedule schedule;
     int i = 0;
 
 
@@ -75,6 +78,7 @@ public class ProfileController extends BaseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         // 获取学生信息
         studentInfo = getStudentInfo();
+        schedule = getSchedule();
 
         note.textProperty().bind(rating.ratingProperty().asString(Locale.ENGLISH, "%.2f"));
 		//TODO fullName.textProperty().bind(/* App.getUserDetail().textProperty() */);
@@ -87,34 +91,48 @@ public class ProfileController extends BaseController implements Initializable {
         grade.setText("Junior");
         position.setText(studentInfo.getPosition().get(0) + "\n" + studentInfo.getPosition().get(1));
 
-//        Internship1.setText(studentInfo.getWorkExperience().get(0).get("Company Name"));
-//        Internship2.setText(studentInfo.getWorkExperience().get(1).get("Company Name"));
-//        InternshipPosition1.setText(studentInfo.getWorkExperience().get(0).get("Position"));
-//        InternshipPosition2.setText(studentInfo.getWorkExperience().get(1).get("Position"));
-//        InternshipTime1.setText(studentInfo.getWorkExperience().get(0).get("Time"));
-//        InternshipTime2.setText(studentInfo.getWorkExperience().get(1).get("Time"));
-//        CompetitionName1.setText(studentInfo.getAwards().get(0).get("Competition Name"));
-//        CompetitionName2.setText(studentInfo.getAwards().get(1).get("Competition Name"));
-//        AwardLevel1.setText(studentInfo.getAwards().get(0).get("Award"));
-//        AwardLevel2.setText(studentInfo.getAwards().get(1).get("Award"));
-//        AwardTime1.setText(studentInfo.getAwards().get(0).get("Time"));
-//        AwardTime2.setText(studentInfo.getAwards().get(1).get("Time"));
-//        ProjectName1.setText(studentInfo.getPersonalProjects().get(0).get("Project Name"));
-//        ProjectName2.setText(studentInfo.getPersonalProjects().get(1).get("Project Name"));
-//        ProjectDescription1.setText(studentInfo.getPersonalProjects().get(0).get("Description"));
-//        ProjectDescription2.setText(studentInfo.getPersonalProjects().get(1).get("Description"));
-//        ProjectLink1.setText(studentInfo.getPersonalProjects().get(0).get("Link"));
-//        ProjectLink2.setText(studentInfo.getPersonalProjects().get(1).get("Link"));
-//        ProjectTime1.setText(studentInfo.getPersonalProjects().get(0).get("Time"));
-//        ProjectTime2.setText(studentInfo.getPersonalProjects().get(1).get("Time"));
 
         setWorkExperience();
         setAwards();
         setProject();
+        setGrade();
 
 
+        i=0;
+        schedule.getMonday().forEach((key,value)->{
+            Label label = new Label(value);
+            label.setStyle("-fx-fill: -text-color;");
+            ClassSchedule.add(label,1,++i);
+        });
+        i=0;
+        schedule.getTuesday().forEach((key,value)->{
+            Label label = new Label(value);
+            label.setStyle("-fx-fill: -text-color;");
+            ClassSchedule.add(label,2,++i);
+        });
+        i=0;
+        schedule.getWednesday().forEach((key,value)->{
+            Label label = new Label(value);
+            label.setStyle("-fx-fill: -text-color;");
+            ClassSchedule.add(label,3,++i);
+        });
+        i=0;
+        schedule.getThursday().forEach((key,value)->{
+            Label label = new Label(value);
+            label.setStyle("-fx-fill: -text-color;");
+            ClassSchedule.add(label,4,++i);
+        });
+        i=0;
+        schedule.getFriday().forEach((key,value)->{
+            Label label = new Label(value);
+            label.setStyle("-fx-fill: -text-color;");
+            ClassSchedule.add(label,5,++i);
+        });
 
-        i=1;
+    }
+    private void setGrade(){
+        Grade.getChildren().clear();
+        i=0;
         studentInfo.getPastCourses().forEach((key, value) -> {
             RowConstraints rowConstraints = new RowConstraints(30);
             rowConstraints.setVgrow(Priority.SOMETIMES);
@@ -130,8 +148,6 @@ public class ProfileController extends BaseController implements Initializable {
             Grade.add(mytime, 2, i);
             i++;
         });
-
-
     }
     private void setWorkExperience(){
         WorkExperience.getChildren().clear();
@@ -418,6 +434,53 @@ private void AwardsAdd(){
                 throw new RuntimeException(e);
             }
         }
+    }
+    @FXML
+    private void GradeAdd(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION); // 确认弹窗
+        alert.setTitle("Add Grades");
+        alert.setHeaderText("Please enter the information of your Grade");
+        alert.setContentText("Please enter the information of your Grade");
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+        TextField Crouse = new TextField();
+        Crouse.setPromptText("Crouse Name");
+        Crouse.setAlignment(Pos.CENTER);
+        TextField Grade = new TextField();
+        Grade.setPromptText("Grade");
+        Grade.setAlignment(Pos.CENTER);
+        TextField Year = new TextField();
+        Year.setPromptText("Year");
+        Year.setAlignment(Pos.CENTER);
+        gridPane.add(new Label("Crouse Name:"), 0, 0);
+        gridPane.add(Crouse, 1, 0);
+        gridPane.add(new Label("Grade:"), 0, 1);
+        gridPane.add(Grade, 1, 1);
+        gridPane.add(new Label("Year:"), 0, 2);
+        gridPane.add(Year, 1, 2);
+        gridPane.setAlignment(Pos.CENTER);
+        alert.getDialogPane().setContent(gridPane);
+        ButtonType buttonTypeYes = new ButtonType("Yes");
+        ButtonType buttonTypeNo = new ButtonType("No");
+        alert.getButtonTypes().setAll(buttonTypeYes, buttonTypeNo);
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == buttonTypeYes && !Crouse.getText().equals("") && !Grade.getText().equals("") && !Year.getText().equals("")){
+            Map<String, String> PastCourses = new HashMap<>();
+            PastCourses.put("grade", Grade.getText());
+            PastCourses.put("year", Year.getText());
+            studentInfo.getPastCourses().put(Crouse.getText(), PastCourses);
+            setGrade();
+            try {
+                StudentToJsonFile(studentInfo);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+    @FXML
+    private void ExportSchedule() throws IOException {
+        scheduleJsonToCsv();
     }
 
     @Override

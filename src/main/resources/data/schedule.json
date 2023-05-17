@@ -1,11 +1,11 @@
 {
   "Monday": {
-    "1": "",
-    "2": "",
+    "1": "Biology",
+    "2": "Biology",
     "3": "Mathematics",
     "4": "Mathematics",
-    "5": "Biology",
-    "6": "Biology",
+    "5": "",
+    "6": "",
     "7": "Physics",
     "8": "Physics",
     "9": "English",
@@ -32,8 +32,8 @@
     "14": "Music"
   },
   "Wednesday": {
-    "1": "",
-    "2": "",
+    "1": "Art",
+    "2": "Art",
     "3": "Biology",
     "4": "Biology",
     "5": "Mathematics",
@@ -44,16 +44,16 @@
     "10": "English",
     "11": "Physics",
     "12": "Physics",
-    "13": "Art",
-    "14": "Art"
+    "13": "",
+    "14": ""
   },
   "Thursday": {
-    "1": "",
-    "2": "",
+    "1": "English",
+    "2": "English",
     "3": "History",
     "4": "History",
-    "5": "English",
-    "6": "English",
+    "5": "",
+    "6": "",
     "7": "Mathematics",
     "8": "Mathematics",
     "9": "Physical Education",
@@ -64,10 +64,10 @@
     "14": "Music"
   },
   "Friday": {
-    "1": "",
-    "2": "",
-    "3": "Physics",
-    "4": "Physics",
+    "1": "Physics",
+    "2": "Physics",
+    "3": "",
+    "4": "",
     "5": "Mathematics",
     "6": "Mathematics",
     "7": "English",
