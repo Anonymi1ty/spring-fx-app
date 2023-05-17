@@ -1,6 +1,7 @@
 package com.pdai.javafx.app.utilsTest;
 
 import com.pdai.javafx.app.poto.ForumInfo;
+import com.pdai.javafx.app.poto.Schedule;
 import com.pdai.javafx.app.poto.Student;
 import org.junit.Test;
 
@@ -53,5 +54,10 @@ public class JsonUtilsTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    @Test
+    public void testGetSchedule() {
+        Schedule schedule = getSchedule();
+        System.out.println(schedule);
     }
 }

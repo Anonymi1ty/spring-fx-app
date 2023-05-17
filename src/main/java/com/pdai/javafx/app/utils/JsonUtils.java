@@ -7,6 +7,7 @@ import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.google.gson.reflect.TypeToken;
 import com.pdai.javafx.app.poto.ForumInfo;
+import com.pdai.javafx.app.poto.Schedule;
 import com.pdai.javafx.app.poto.Student;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
@@ -101,6 +102,20 @@ public class JsonUtils {
         }
         Gson gson = new Gson();
         return gson.fromJson(jsonString, new TypeToken<List<ForumInfo>>(){}.getType());
+    }
+    /**
+     * （复用方法）获取schedule.json中的数据，返回一个Schedule对象
+     * @return Schedule对象
+     */
+    public static Schedule getSchedule() {
+        String jsonString;
+        try {
+            jsonString = getJson("src/main/resources/data/schedule.json");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Schedule schedule = jsonToJavaBean(jsonString, Schedule.class);
+        return schedule;
     }
 
     /**

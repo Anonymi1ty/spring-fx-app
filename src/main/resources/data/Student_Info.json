@@ -1,1 +1,171 @@
-{"name":"Jason","age":20,"major":"E-commerce","gpa":4.5,"rank":10,"School":"International School","courses":["Software Engineering","SupportChain Management","Intellectual Property","CyberSecurity Law"],"PastCourses":{"Internet Protocol":{"grade":"95","year":"2022+"},"Data Mining":{"grade":"98","year":"2022+"},"Database":{"grade":"97","year":"2022-"},"Business Management":{"grade":"95","year":"2021+"},"Economics":{"grade":"96","year":"2021+"},"Computer Architecture":{"grade":"98","year":"2021-"},"Operating System":{"grade":"99","year":"2021-"},"Computer Network":{"grade":"100","year":"2021-"},"Computer Organization":{"grade":"100","year":"2021-"},"Introduction to Computer":{"grade":"100","year":"2021-"},"Calculus":{"grade":"100","year":"2021-"},"Linear Algebra":{"grade":"100","year":"2021-"},"Discrete Mathematics":{"grade":"100","year":"2021-"},"English":{"grade":"100","year":"2021-"},"Data Structure":{"grade":"100","year":"2021-"},"Digit Circuit":{"grade":"100","year":"2021-"},"Artificial Circuit":{"grade":"100","year":"2021-"}},"PersonalPlanning":{"Obtain the qualification of excellent fresh undergraduate graduates to be exempted from studying for master\u0027s degree":"2023.1-2023.6","Successfully obtained an internship in Shake Shack":"2023.4-2023.5"},"RecentEvents":{"2023-4-19-22:30":["Software engineering mid-term acceptance"],"2023-4-28-23:55":["Cybersecurity Law Assignment","Intellectual Property Assignment"]},"Position":["Student Council President","Group Secretary"],"WorkExperience":[{"Company Name":"Tencent","Position":"Cashier","Time":"2022.6-2022.8"},{"Company Name":"Beijing Winter Olympic Games","Position":"Volunteer","Time":"2022.1-2022.3"},{"Company Name":"Alibaba","Position":"Interns","Time":"2021.5-2022.2"},{"Company Name":"OpenAI","Position":"Interns","Time":"2022.5-2024.1"}],"Awards":[{"Competition Name":"U.S. college modeling competition","Award":"First Prize","Time":"2023.5.15"},{"Competition Name":"National University Mathematics Competition","Award":"First Prize","Time":"2023.6.20"},{"Award":"First Prize","Competition Name":"Innovation and Entrepreneurship Competition for University Students","Time":"2023.6"}],"PersonalProjects":[{"Project Name":"A website for the school","Time":"2022.9-2022.12","Description":"A website for the school to provide information for students and teachers","Link":"https://www.sadadriuhiasod.com"},{"Project Name":"A website for the airport","Time":"2021.9-2021.10","Description":"A website for the airport to provide information for passengers","Link":"https://www.sadadry.com"}],"notifaction":[{"title":"明天举行期末考试","content":"请各位同学务必准时到达考场，携带好所需考试用具，祝大家考试顺利！","date":"2023-05-14"},{"title":"图书馆闭馆通知","content":"由于图书馆系统升级，本馆将于明天起闭馆三天，给大家带来的不便敬请谅解。","date":"2023-05-13"},{"title":"大学生创新创业大赛报名开始","content":"为鼓励大学生创新创业，我校将于下周举行大学生创新创业大赛，欢迎有志于创新的同学积极报名参加！","date":"2023-05-15"}]}
+{
+    "name": "Jason",
+    "age": 20,
+    "major": "E-commerce",
+    "gpa": 4.5,
+    "rank": 10,
+    "School": "International School",
+    "courses": [
+        "Software Engineering",
+        "SupportChain Management",
+        "Intellectual Property",
+        "CyberSecurity Law"
+    ],
+    "PastCourses": {
+        "Internet Protocol": {
+            "grade": "95",
+            "year": "2022+"
+        },
+        "Data Mining": {
+            "grade": "98",
+            "year": "2022+"
+        },
+        "Database": {
+            "grade": "97",
+            "year": "2022-"
+        },
+        "Business Management": {
+            "grade": "95",
+            "year": "2021+"
+        },
+        "Economics": {
+            "grade": "96",
+            "year": "2021+"
+        },
+        "Computer Architecture": {
+            "grade": "98",
+            "year": "2021-"
+        },
+        "Operating System": {
+            "grade": "99",
+            "year": "2021-"
+        },
+        "Computer Network": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Computer Organization": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Introduction to Computer": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Calculus": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Linear Algebra": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Discrete Mathematics": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "English": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Data Structure": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Digit Circuit": {
+            "grade": "100",
+            "year": "2021-"
+        },
+        "Artificial Circuit": {
+            "grade": "100",
+            "year": "2021-"
+        }
+    },
+    "PersonalPlanning": {
+        "Obtain the qualification of excellent fresh undergraduate graduates to be exempted from studying for master\u0027s degree": "2023.1-2023.6",
+        "Successfully obtained an internship in Shake Shack": "2023.4-2023.5"
+    },
+    "RecentEvents": {
+        "2023-4-19-22:30": [
+            "Software engineering mid-term acceptance"
+        ],
+        "2023-4-28-23:55": [
+            "Cybersecurity Law Assignment",
+            "Intellectual Property Assignment"
+        ]
+    },
+    "Position": [
+        "Student Council President",
+        "Group Secretary"
+    ],
+    "WorkExperience": [
+        {
+            "Company Name": "Tencent",
+            "Position": "Cashier",
+            "Time": "2022.6-2022.8"
+        },
+        {
+            "Company Name": "Beijing Winter Olympic Games",
+            "Position": "Volunteer",
+            "Time": "2022.1-2022.3"
+        },
+        {
+            "Company Name": "Alibaba",
+            "Position": "Interns",
+            "Time": "2021.5-2022.2"
+        },
+        {
+            "Company Name": "OpenAI",
+            "Position": "Interns",
+            "Time": "2022.5-2024.1"
+        }
+    ],
+    "Awards": [
+        {
+            "Competition Name": "U.S. college modeling competition",
+            "Award": "First Prize",
+            "Time": "2023.5.15"
+        },
+        {
+            "Competition Name": "National University Mathematics Competition",
+            "Award": "First Prize",
+            "Time": "2023.6.20"
+        },
+        {
+            "Award": "First Prize",
+            "Competition Name": "Innovation and Entrepreneurship Competition for University Students",
+            "Time": "2023.6"
+        }
+    ],
+    "PersonalProjects": [
+        {
+            "Project Name": "A website for the school",
+            "Time": "2022.9-2022.12",
+            "Description": "A website for the school to provide information for students and teachers",
+            "Link": "https://www.sadadriuhiasod.com"
+        },
+        {
+            "Project Name": "A website for the airport",
+            "Time": "2021.9-2021.10",
+            "Description": "A website for the airport to provide information for passengers",
+            "Link": "https://www.sadadry.com"
+        }
+    ],
+    "notifaction": [
+        {
+            "title": "明天举行期末考试",
+            "content": "请各位同学务必准时到达考场，携带好所需考试用具，祝大家考试顺利！",
+            "date": "2023-05-14"
+        },
+        {
+            "title": "图书馆闭馆通知",
+            "content": "由于图书馆系统升级，本馆将于明天起闭馆三天，给大家带来的不便敬请谅解。",
+            "date": "2023-05-13"
+        },
+        {
+            "title": "大学生创新创业大赛报名开始",
+            "content": "为鼓励大学生创新创业，我校将于下周举行大学生创新创业大赛，欢迎有志于创新的同学积极报名参加！",
+            "date": "2023-05-15"
+        }
+    ]
+}
