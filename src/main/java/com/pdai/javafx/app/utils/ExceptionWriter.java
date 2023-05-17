@@ -8,11 +8,6 @@ import java.io.Writer;
  *
  * <b>Description</b>: TODO ADD FUNCTION. <br/>
  *
- * <b>Date</b>: Apr 22, 2019 1:11:29 PM <br/>
- * 
- * @author peng.dai@siemens.com
- * @version Apr 22, 2019
- *
  */
 public class ExceptionWriter extends PrintWriter {
 	public ExceptionWriter(Writer writer) {

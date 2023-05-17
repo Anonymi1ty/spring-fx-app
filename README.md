@@ -24,8 +24,6 @@
     - [全屏最大化最小化 - FullScreen/Max/Min/Close](#%e5%85%a8%e5%b1%8f%e6%9c%80%e5%a4%a7%e5%8c%96%e6%9c%80%e5%b0%8f%e5%8c%96---fullscreenmaxminclose)
   - [示例代码](#%e7%a4%ba%e4%be%8b%e4%bb%a3%e7%a0%81)
 
-> <span style='color:red;font-size:25px;'>最全的Java后端知识体系</span><span style='color:red;font-size:25px;'> [https://www.pdai.tech](https://www.pdai.tech)</span>, <span style='color:red;font-size:25px;'>每天更新中...</span>。
-
 ### 技术背景 - Java 8的新特性之JavaFX2.0
 
 #### 全新现代主题：Modena
@@ -100,10 +98,6 @@ TreeTable支持
 ### 如何部署
 > 收到几个开发问如何进行运行和部署，统一回复下：
 
-+ 安装jar到本地的maven库
-
-![](https://www.pdai.tech/_images/spring/springboot-javafx-app-10.png)
-
 具体执行maven安装的脚本如下（这里D:\git\github\springboot-javafx-app-demo是我本地的项目目录，需要改成你自己的）：
 
 ```bash
@@ -118,15 +112,6 @@ mvn install:install-file -DgroupId=gn -DartifactId=GNDecorator -Dversion=v2.1.2-
 mvn install:install-file -DgroupId=gn -DartifactId=GNAvatarView -Dversion=v1.0-rc -Dpackaging=jar -Dfile=D:\git\github\springboot-javafx-app-demo\lib\GNAvatarView-1.0-rc.jar
 
 ```
-
-在这里执行：
-
-![](https://www.pdai.tech/_images/spring/springboot-javafx-app-8.png)
-
-
-+ 编译的maven插件
-
-![](https://www.pdai.tech/_images/spring/springboot-javafx-app-9.png)
 
 
 + pom.xml如下
@@ -296,4 +281,4 @@ X runtime of version 8.0.65
 
 ### 示例代码
 
-@See https://github.com/realpdai/springboot-javafx-app-demo
+@See https://github.com/Anonymi1ty/spring-fx-app

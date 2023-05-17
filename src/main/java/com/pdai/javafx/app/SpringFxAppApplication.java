@@ -11,10 +11,6 @@ import java.util.Arrays;
  *
  * <b>Description</b>: SpringFxAppApplication <br/>
  *
- * <b>Date</b>: Apr 12, 2019 11:05:23 AM <br/>
- *
- * @author pdai
- * @version Apr 12, 2019
  */
 @SpringBootApplication
 public class SpringFxAppApplication extends AbstractFxApplication {

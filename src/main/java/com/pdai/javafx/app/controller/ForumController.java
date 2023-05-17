@@ -13,17 +13,16 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
 import static com.pdai.javafx.app.utils.JsonUtils.*;
-
+@Data
 @Component
 public class ForumController extends BaseController implements Initializable {
 
@@ -47,14 +46,16 @@ public class ForumController extends BaseController implements Initializable {
     }
     @FXML
     public void sendMessage() {
-        forumInfos.add(new ForumInfo(student.getName(), messageInput.getText()));
-        try {
-            javaBeanToJsonFile(forumInfos);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        if (!messageInput.getText().equals("")) {
+            forumInfos.add(new ForumInfo(student.getName(), messageInput.getText()));
+            try {
+                javaBeanToJsonFile(forumInfos);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            display();
+            messageInput.clear();
         }
-        display();
-        messageInput.clear();
     }
 
     public void display() {

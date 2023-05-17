@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.List;
 
 import static com.pdai.javafx.app.utils.JsonUtils.*;
+import static org.junit.Assert.assertEquals;
 
 public class JsonUtilsTest {
     @Test
@@ -19,6 +20,7 @@ public class JsonUtilsTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        //使用assert断言，判断是否符合预期
         System.out.println(jsonString);
     }
     @Test
@@ -29,28 +31,25 @@ public class JsonUtilsTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(jsonString1);
         Student testStringToJson = jsonToJavaBean(jsonString1, Student.class);
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println(testStringToJson);
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println(testStringToJson.getRecentEvents().size());
+        assertEquals((testStringToJson.getName()), "Jason");
     }
     @Test
     public void testGetStudentInfo() {
         Student student = getStudentInfo();
-        System.out.println(student);
+        assertEquals((student.getName()), "Jason");
     }
     @Test
     public void InfoTest(){
         List<ForumInfo> forumInfos = getInfo();
-        System.out.println(forumInfos);
+        assertEquals((forumInfos.get(0).getMessage()), "Hello everyone!");
     }
 
     @Test
     public void testJavaBeanToJsonFile() {
         try {
             scheduleJsonToCsv();
+            System.out.println("success");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -58,6 +57,6 @@ public class JsonUtilsTest {
     @Test
     public void testGetSchedule() {
         Schedule schedule = getSchedule();
-        System.out.println(schedule);
+        assertEquals((schedule.getMonday().get("1")),"Biology");
     }
 }
