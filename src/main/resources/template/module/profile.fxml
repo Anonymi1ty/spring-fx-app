@@ -371,10 +371,10 @@
                                                       <children>
                                                           <GridPane alignment="CENTER" hgap="5" vgap="5" >
                                                               <columnConstraints>
-                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
-                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
-                                                                  <ColumnConstraints minWidth="150" hgrow="ALWAYS" />
-                                                                  <ColumnConstraints minWidth="40" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                               </columnConstraints>
                                                               <rowConstraints>
                                                                   <RowConstraints vgrow="SOMETIMES" />
@@ -391,6 +391,7 @@
                                                           <ScrollPane fitToWidth="true" prefHeight="1500">
                                                           <GridPane fx:id="Grade" alignment="CENTER" hgap="5" vgap="5" >
                                                               <columnConstraints>
+                                                                  <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
                                                                   <ColumnConstraints prefWidth="100" hgrow="ALWAYS" />
