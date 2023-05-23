@@ -19,17 +19,6 @@ import javafx.application.Preloader;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
-/**
- * <b>ClassName</b>: AbstractFxApplication <br/>
- *
- * <b>Description</b>: AbstractFxApplication <br/>
- *
- * <b>Date</b>: Apr 22, 2019 12:20:32 PM <br/>
- * 
- * @author pdai
- * @version Apr 22, 2019
- *
- */
 @SuppressWarnings("restriction")
 public abstract class AbstractFxApplication extends Application {
 
@@ -70,9 +59,7 @@ public abstract class AbstractFxApplication extends Application {
 				});
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see javafx.application.Application#init()
 	 */
 	@Override
@@ -90,6 +77,9 @@ public abstract class AbstractFxApplication extends Application {
 		}
 	}
 
+	/**
+	 * Update loader status
+	 */
 	private synchronized void notifyLoader() {
 		progress += 100f / preloadViews.size();
 		try {
@@ -99,9 +89,7 @@ public abstract class AbstractFxApplication extends Application {
 		LauncherImpl.notifyPreloader(this, new Preloader.ProgressNotification(progress));
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see javafx.application.Application#start(javafx.stage.Stage)
 	 */
 	@Override
@@ -112,9 +100,7 @@ public abstract class AbstractFxApplication extends Application {
 		stageManager.showDecorator();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see javafx.application.Application#stop()
 	 */
 	@Override

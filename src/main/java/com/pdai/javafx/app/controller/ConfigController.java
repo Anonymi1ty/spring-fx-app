@@ -16,6 +16,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.VBox;
 
+/**
+ * {@code @description:} The controller for drawing the config.
+ */
 @Component
 public class ConfigController implements Initializable {
 	StageManager stageManager;
@@ -28,17 +31,35 @@ public class ConfigController implements Initializable {
 
     public static  ConfigController ctrl;
 
+    /**
+     * Initializes the controller class.
+     * @param location
+     * The location used to resolve relative paths for the root object, or
+     * <tt>null</tt> if the location is not known.
+     *
+     * @param resources
+     * The resources used to localize the root object, or <tt>null</tt> if
+     * the root object was not localized.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ctrl = this;
     }
 
     private boolean invert = false;
+
+    /**
+     * Change the theme of the application
+     */
     @FXML
     private void altTheme() {
         invertTheme(!invert);
     }
 
+    /**
+     * Change the theme of the application
+     * @param dark true if dark theme, false otherwise
+     */
     public void changeTheme(boolean dark) {
     	stageManager = SpringUtils.getBean(StageManager.class);
         String theme;
@@ -66,7 +87,11 @@ public class ConfigController implements Initializable {
                 getClass().getResource(path + "master.css").toExternalForm()
         );
     }
-    
+
+    /**
+     * Invert the theme of the application
+     * @param dark true if dark theme, false otherwise
+     */
     public void invertTheme(boolean dark) {
     	
     	stageManager = SpringUtils.getBean(StageManager.class);
@@ -98,11 +123,6 @@ public class ConfigController implements Initializable {
                 getClass().getResource(path + "helpers.css").toExternalForm(),
                 getClass().getResource(path + "master.css").toExternalForm()
         );
-
-//        for (Node node : ViewManager.getInstance().getAll()) {
-//            ((StackPane) node).getStylesheets().clear();
-//            ((StackPane) node).getStylesheets().setAll(stylesheets);
-//        }
 
         MainController.popConfig.hide();
 

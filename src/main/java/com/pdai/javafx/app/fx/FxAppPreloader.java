@@ -14,6 +14,9 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+/**
+ * {@code @description:} The preloader for the application
+ */
 public class FxAppPreloader extends Preloader {
 
 	private JFXProgressBar progressBar;

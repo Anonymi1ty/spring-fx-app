@@ -26,6 +26,9 @@ import javafx.scene.layout.*;
 
 import static com.pdai.javafx.app.utils.JsonUtils.*;
 
+/**
+ * {@code @description:} The controller for the profile
+ */
 @Component
 public class ProfileController extends BaseController implements Initializable {
 
@@ -41,26 +44,6 @@ public class ProfileController extends BaseController implements Initializable {
     @FXML private Label rank;
     @FXML private Label grade;
     @FXML private Label position;
-//    @FXML private Label Internship1;
-//    @FXML private Label Internship2;
-//    @FXML private Label InternshipPosition1;
-//    @FXML private Label InternshipPosition2;
-//    @FXML private Label InternshipTime1;
-//    @FXML private Label InternshipTime2;
-//    @FXML private Label CompetitionName1;
-//    @FXML private Label CompetitionName2;
-//    @FXML private Label AwardLevel1;
-//    @FXML private Label AwardLevel2;
-//    @FXML private Label AwardTime1;
-//    @FXML private Label AwardTime2;
-//    @FXML private Label ProjectName1;
-//    @FXML private Label ProjectName2;
-//    @FXML private Label ProjectDescription1;
-//    @FXML private Label ProjectDescription2;
-//    @FXML private Hyperlink ProjectLink1;
-//    @FXML private Hyperlink ProjectLink2;
-//    @FXML private Label ProjectTime1;
-//    @FXML private Label ProjectTime2;
     @FXML private GridPane WorkExperience;
     @FXML private GridPane Awards;
     @FXML private GridPane Grade;
@@ -71,9 +54,16 @@ public class ProfileController extends BaseController implements Initializable {
     int i = 0;
 
 
-
-
-
+    /**
+     * {@code @description:} The method for the popover
+     * @param location
+     * The location used to resolve relative paths for the root object, or
+     * <tt>null</tt> if the location is not known.
+     *
+     * @param resources
+     * The resources used to localize the root object, or <tt>null</tt> if
+     * the root object was not localized.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // 获取学生信息

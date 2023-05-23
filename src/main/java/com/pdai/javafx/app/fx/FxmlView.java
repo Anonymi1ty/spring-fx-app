@@ -2,6 +2,9 @@ package com.pdai.javafx.app.fx;
 
 import java.util.ResourceBundle;
 
+/**
+ * {@code FxmlView} is an enumeration of all fxml files with their corresponding titles.
+ */
 public enum FxmlView {
     MAIN {
         // title()是给窗口设置标题的

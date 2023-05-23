@@ -4,6 +4,10 @@ import lombok.Data;
 
 import java.util.List;
 import java.util.Map;
+
+/**
+ * {@code @description:} This class is responsible for taking data from the Student_info.json file
+ */
 @Data
 public class Student {
     //本类负责承接Student_info.json文件中的数据

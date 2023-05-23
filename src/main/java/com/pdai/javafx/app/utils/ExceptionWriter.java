@@ -4,10 +4,7 @@ import java.io.PrintWriter;
 import java.io.Writer;
 
 /**
- * <b>ClassName</b>: ExceptionWriter <br/>
- *
- * <b>Description</b>: TODO ADD FUNCTION. <br/>
- *
+ * {@code ExceptionWriter} is a {@link PrintWriter} that can be used to get a stacktrace as a string.
  */
 public class ExceptionWriter extends PrintWriter {
 	public ExceptionWriter(Writer writer) {

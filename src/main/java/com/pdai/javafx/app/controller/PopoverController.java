@@ -8,6 +8,9 @@ import javafx.scene.layout.VBox;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * {@code @description:} The controller for the popover
+ */
 public class PopoverController implements Initializable {
 
     @FXML

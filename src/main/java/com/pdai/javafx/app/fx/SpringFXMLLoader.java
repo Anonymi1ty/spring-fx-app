@@ -16,11 +16,6 @@ import org.springframework.stereotype.Component;
  * Java FX to coexist once the Spring Application context has been
  * bootstrapped.<br/>
  *
- * <b>Date</b>: Apr 22, 2019 1:11:58 PM <br/>
- * 
- * @author pdai
- * @version Apr 22, 2019
- *
  */
 @Component
 public class SpringFXMLLoader {

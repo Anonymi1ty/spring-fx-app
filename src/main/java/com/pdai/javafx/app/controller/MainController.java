@@ -40,6 +40,9 @@ import javafx.scene.control.TitledPane;
 
 import static com.pdai.javafx.app.utils.JsonUtils.getStudentInfo;
 
+/**
+ * {@code @description:} The controller for drawing the main layout of the app.
+ */
 @Component
 public class MainController extends BaseController implements Initializable {
 
@@ -86,6 +89,16 @@ public class MainController extends BaseController implements Initializable {
 
 	private Student studentInfo ;
 
+	/**
+	 * Initializes the controller class.
+	 * @param location
+	 * The location used to resolve relative paths for the root object, or
+	 * <tt>null</tt> if the location is not known.
+	 *
+	 * @param resources
+	 * The resources used to localize the root object, or <tt>null</tt> if
+	 * the root object was not localized.
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ctrl = this;
@@ -106,6 +119,9 @@ public class MainController extends BaseController implements Initializable {
 		messages.setText(String.valueOf(studentInfo.getNotifaction().size()));
 	}
 
+	/**
+	 * {@link Button} click event handler used to display the home view.
+	 */
 	@FXML
 	private void altLayout() {
 
@@ -148,6 +164,8 @@ public class MainController extends BaseController implements Initializable {
 			}
 		}
 	}
+
+
 
 	private void addEvents() {
 		VBox drawerContent;
@@ -238,6 +256,9 @@ public class MainController extends BaseController implements Initializable {
 		}
 	}
 
+	/**
+	 * load Content Popup
+	 */
 	private void loadContentPopup() {
 		try {
 			popContent = FXMLLoader.load(getClass().getResource("/template/main/Config.fxml"));

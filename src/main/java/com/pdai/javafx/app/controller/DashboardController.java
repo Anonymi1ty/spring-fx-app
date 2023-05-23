@@ -13,7 +13,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
-// 画图的控制器
+
+/**
+ * {@code @description:} The controller for drawing the dashboard.
+ */
 @Component
 public class DashboardController extends BaseController implements Initializable {
 
@@ -21,7 +24,16 @@ public class DashboardController extends BaseController implements Initializable
 
     @FXML private PieChart pieChart;
 
-    @SuppressWarnings("unchecked")
+    /**
+     * Initializes the controller class.
+     * @param location
+     * The location used to resolve relative paths for the root object, or
+     * <tt>null</tt> if the location is not known.
+     *
+     * @param resources
+     * The resources used to localize the root object, or <tt>null</tt> if
+     * the root object was not localized.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

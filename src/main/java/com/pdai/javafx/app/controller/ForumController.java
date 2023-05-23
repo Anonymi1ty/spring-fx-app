@@ -22,6 +22,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import static com.pdai.javafx.app.utils.JsonUtils.*;
+
+/**
+ * {@code @description:} The controller for drawing the forum.
+ */
 @Data
 @Component
 public class ForumController extends BaseController implements Initializable {
@@ -33,6 +37,16 @@ public class ForumController extends BaseController implements Initializable {
     private Student student;
 
 
+    /**
+     * Initializes the controller class.
+     * @param location
+     * The location used to resolve relative paths for the root object, or
+     * <tt>null</tt> if the location is not known.
+     *
+     * @param resources
+     * The resources used to localize the root object, or <tt>null</tt> if
+     * the root object was not localized.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         forumInfos = getInfo();
@@ -40,10 +54,23 @@ public class ForumController extends BaseController implements Initializable {
         display();
     }
 
+    /**
+     * Called when the application should stop, and provides a convenient place
+     * @param primaryStage the primary stage for this application, onto which
+     * the application scene can be set. The primary stage will be embedded in
+     * the browser if the application was launched as an applet.
+     * Applications may create other stages, if needed, but they will not be
+     * primary stages and will not be embedded in the browser.
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
 
     }
+
+    /**
+     * Send message to the forum
+     */
     @FXML
     public void sendMessage() {
         if (!messageInput.getText().equals("")) {
@@ -58,6 +85,9 @@ public class ForumController extends BaseController implements Initializable {
         }
     }
 
+    /**
+     * Display the message on the forum
+     */
     public void display() {
         messageContainer.getChildren().clear();
         int i = 0;

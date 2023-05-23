@@ -5,22 +5,19 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-/** 
- * <b>ClassName</b>: SpringUtils <br/> 
- *
- * <b>Description</b>: SpringUtils <br/> 
- *
- * <b>Date</b>: Apr 4, 2019 3:00:11 PM <br/> 
- * 
- * @author pdai
- * @version Apr 4, 2019
- *
+/**
+ * {@code SpringUtils} is a utility class that can be used to get a Spring Bean from the application context.
  */
 @Component
 public class SpringUtils implements ApplicationContextAware {
 
 	private static ApplicationContext applicationContext;
 
+	/**
+	 * Implement the callback methods of the ApplicationContextAware interface to set the context environment
+	 * @param applicationContext
+	 * @throws BeansException
+	 */
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		if (SpringUtils.applicationContext == null) {
@@ -28,22 +25,40 @@ public class SpringUtils implements ApplicationContextAware {
 		}
 	}
 
-	// 获取applicationContext
+	/**
+	 * Get the applicationContext
+	 * @return ApplicationContext
+	 */
 	public static ApplicationContext getApplicationContext() {
 		return applicationContext;
 	}
 
-	// 通过name获取 Bean.
+	/**
+	 * Get the Bean by name.
+	 * @param name
+	 * @return
+	 */
 	public static Object getBean(String name) {
 		return getApplicationContext().getBean(name);
 	}
 
-	// 通过class获取Bean.
+	/**
+	 * Get the Bean by name.
+	 * @param clazz
+	 * @return
+	 * @param <T>
+	 */
 	public static <T> T getBean(Class<T> clazz) {
 		return getApplicationContext().getBean(clazz);
 	}
 
-	// 通过name,以及Clazz返回指定的Bean
+	/**
+	 * Returns the specified Bean by name and Clazz
+	 * @param name
+	 * @param clazz
+	 * @return
+	 * @param <T>
+	 */
 	public static <T> T getBean(String name, Class<T> clazz) {
 		return getApplicationContext().getBean(name, clazz);
 	}

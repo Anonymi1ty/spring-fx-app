@@ -17,17 +17,6 @@ import com.pdai.javafx.app.utils.ExceptionWriter;
 
 import javafx.stage.Stage;
 
-/** 
-* <b>ClassName</b>: AppJavaConfig <br/> 
-*
-* <b>Description</b>: AppJavaConfig <br/> 
-*
-* <b>Date</b>: Apr 22, 2019 1:13:50 PM <br/> 
-* 
-* @author pdai
-* @version Apr 22, 2019
-*
-*/
 @Configuration
 public class AppJavaConfig {
 	
@@ -44,11 +33,22 @@ public class AppJavaConfig {
         return new ExceptionWriter(new StringWriter());
     }
 
+    /**
+     * Manages the views to be displayed in the application primary stage
+     * @return StageManager
+     */
     @Bean
     public ResourceBundle resourceBundle() {
         return ResourceBundle.getBundle("Bundle");
     }
-    
+
+    /**
+     * Manages the views to be displayed in the application primary stage
+     * @param stage - The application primary stage
+     * @param decorator - The application decorator
+     * @return StageManager
+     * @throws IOException - If the main view cannot be loaded
+     */
     @Bean
     @Lazy(value = true) //Stage only created after Spring context bootstap
     public StageManager stageManager(Stage stage, GNDecorator decorator) throws IOException {

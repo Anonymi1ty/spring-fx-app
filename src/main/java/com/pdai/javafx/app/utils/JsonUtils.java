@@ -16,15 +16,18 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.util.*;
 
+/**
+ * {@code @description:} This class is responsible for reading and writing data to the json file
+ */
 @ComponentScan
 @Component
 public class JsonUtils {
     // 从JSON文件中读取数据，返回一个String类型的字符串
 
     /**
-     * 读取json文件
-     * @param filePath json文件路径
-     * @return 返回对应的json字符串
+     * Reading a json file and return a string
+     * @param filePath json file path
+     * @return Returns the corresponding json string
      * @throws IOException
      */
     public static String getJson(String filePath) throws IOException {
@@ -39,9 +42,9 @@ public class JsonUtils {
     }
 
     /**
-     * 将Java对象转化为Json字符串
-     * @param object Java对象
-     * @return Json字符串
+     * Converts a Java object to a Json string
+     * @param object Java Objects
+     * @return Json string
      */
     public static void javaBeanToJsonFile(Object object) throws IOException {
         Gson gson = new Gson();
@@ -62,11 +65,11 @@ public class JsonUtils {
     }
 
     /**
-     * 将Json转化为Java对象
-     * @param json json字符串
-     * @param clazz 转化的类
-     * @return 转化后的proto对象
-     * @param <T> 转化的类
+     * Converting Json to Java objects
+     * @param json json string
+     * @param clazz Java class
+     * @return Java objects
+     * @param <T> Transformed class
      */
     public static <T> T jsonToJavaBean(String json, Class<T> clazz) {
         Gson gson = new Gson();
@@ -75,8 +78,8 @@ public class JsonUtils {
     }
 
     /**
-     * （复用方法）获取Student_Info.json中的数据，返回一个Student对象
-     * @return Student对象
+     * (Reuse method) Gets the data in Student_Info.json and returns a Student object
+     * @return Student Object
      */
     public static Student getStudentInfo() {
         String jsonString;
@@ -90,7 +93,7 @@ public class JsonUtils {
     }
 
     /**
-     * （复用方法）获取Forum.json中的数据，返回一个Info对象的List
+     * (Reuse method) Gets the data in Forum.json and returns a List of Info objects
      * @return List<ForumInfo>
      */
     public static List<ForumInfo> getInfo() {
@@ -104,7 +107,7 @@ public class JsonUtils {
         return gson.fromJson(jsonString, new TypeToken<List<ForumInfo>>(){}.getType());
     }
     /**
-     * （复用方法）获取schedule.json中的数据，返回一个Schedule对象
+     * (Reuse method) Gets the data in schedule.json and returns a Schedule object
      * @return Schedule对象
      */
     public static Schedule getSchedule() {
@@ -119,7 +122,7 @@ public class JsonUtils {
     }
 
     /**
-     * 将课程表的JSON文件转化为csv文件，并且保存到src/main/resources/data/schedule.csv路径下
+     * To schedule the JSON file into a CSV file, and save the SRC/main/resources/data/schedule. CSV path
      * @throws IOException
      */
     public static void scheduleJsonToCsv() throws IOException {
