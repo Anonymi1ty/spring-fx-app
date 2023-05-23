@@ -1,58 +1,36 @@
 # springboot-javafx-app-demo
 
-## Spring Boot - JavaFX 2.0应用
+## Spring Boot-JavaFX 2.0 applications
 
-> 很多人对Java开发native程序第一反应还停留在暗灰色单一风格的Java GUI界面，开发方式还停留在AWT或者Swing。本文主要基于SpringBoot和JavaFX开发一个Demo给你展示Java Native应用可以做到什么样的程度。当然JavaFX 2.0没有流行起来也是有原因的，而且目前native的选择很多，前端是个框架都会搞个native... @pdai
+> Many people's first reaction to Java native program development still stays in the dark gray single style of Java GUI interface, development style still stays in AWT or Swing. This article focuses on developing a Demo based on SpringBoot and JavaFX to show you how far Java Native applications can go. Of course, JavaFX 2.0 did not catch on for a reason, and now there are many native options, front-end frameworks will make a native...
 
-- [Spring Boot - JavaFX 2.0应用](#spring-boot---javafx-20%e5%ba%94%e7%94%a8)
-  - [技术背景 - Java 8的新特性之JavaFX2.0](#%e6%8a%80%e6%9c%af%e8%83%8c%e6%99%af---java-8%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7%e4%b9%8bjavafx20)
-    - [全新现代主题：Modena](#%e5%85%a8%e6%96%b0%e7%8e%b0%e4%bb%a3%e4%b8%bb%e9%a2%98modena)
-    - [用于 CSS 结构的公共 API](#%e7%94%a8%e4%ba%8e-css-%e7%bb%93%e6%9e%84%e7%9a%84%e5%85%ac%e5%85%b1-api)
-    - [WebView 增强功能](#webview-%e5%a2%9e%e5%bc%ba%e5%8a%9f%e8%83%bd)
-    - [JavaFX Scene Builder 2.0](#javafx-scene-builder-20)
-    - [JavaFX 3D](#javafx-3d)
-    - [富文本](#%e5%af%8c%e6%96%87%e6%9c%ac)
-    - [TreeTableView](#treetableview)
-    - [日期控件DatePicker](#%e6%97%a5%e6%9c%9f%e6%8e%a7%e4%bb%b6datepicker)
-  - [Spring Boot+JavaFX2 Demo介绍](#spring-bootjavafx2-demo%e4%bb%8b%e7%bb%8d)
-    - [程序加载 - Loader](#%e7%a8%8b%e5%ba%8f%e5%8a%a0%e8%bd%bd---loader)
-    - [和WEB一样风格的GUI](#%e5%92%8cweb%e4%b8%80%e6%a0%b7%e9%a3%8e%e6%a0%bc%e7%9a%84gui)
-    - [对话框 - Popup](#%e5%af%b9%e8%af%9d%e6%a1%86---popup)
-    - [Web应用嵌入 - Webview](#web%e5%ba%94%e7%94%a8%e5%b5%8c%e5%85%a5---webview)
-    - [多种主题切换 - Theme](#%e5%a4%9a%e7%a7%8d%e4%b8%bb%e9%a2%98%e5%88%87%e6%8d%a2---theme)
-    - [消息及配置悬浮框 - Message/Configuration...](#%e6%b6%88%e6%81%af%e5%8f%8a%e9%85%8d%e7%bd%ae%e6%82%ac%e6%b5%ae%e6%a1%86---messageconfiguration)
-    - [全屏最大化最小化 - FullScreen/Max/Min/Close](#%e5%85%a8%e5%b1%8f%e6%9c%80%e5%a4%a7%e5%8c%96%e6%9c%80%e5%b0%8f%e5%8c%96---fullscreenmaxminclose)
-  - [示例代码](#%e7%a4%ba%e4%be%8b%e4%bb%a3%e7%a0%81)
-
-### 技术背景 - Java 8的新特性之JavaFX2.0
-
-#### 全新现代主题：Modena
-
-新的Modena主题来替换原来的Caspian主题。不过在Application的start()方法中，可以通过setUserAgentStylesheet(STYLESHEET_CASPIAN)来继续使用Caspian主题。
-
-参考http://fxexperience.com/2013/03/modena-theme-update/
+[TOC]
 
 
-#### 用于 CSS 结构的公共 API
 
- + CSS 样式设置是 JavaFX 的一项主要特性
- + CSS 已专门在私有 API 中实现（com.sun.javafx.css 软件包）
- + 多种工具（例如 Scene Builder）需要 CSS 公共 API
- + 开发人员将能够定义自定义 CSS 样式
+### Technical background - Javafx 2.0, a new feature of Java 8
 
-#### WebView 增强功能
+#### A new modern theme: Modena
 
-+ Nashorn JavaScript 引擎 https://blogs.oracle.com/nashorn/entry/open_for_business
-+ WebSocket http://javafx-jira.kenai.com/browse/RT-14947
-+ Web Workers http://javafx-jira.kenai.com/browse/RT-9782
+New Modena theme to replace the original Caspian theme. However, in the start() method of the Application, we can continue to use the Caspian theme by calling setUserAgentStylesheet(STYLESHEET_CASPIAN).
+
+Refer to http://fxexperience.com/2013/03/modena-theme-update/
+
+
+#### Public API for CSS structure
+
++ CSS styling is one of the main features of JavaFX
++ CSS implemented specifically in a private API (com.sun.javafx.css package)
++ CSS public apis are required by several tools (e.g. Scene Builder)
++ Developers will be able to define custom CSS styles
 
 #### JavaFX Scene Builder 2.0
 
-可视化工具，加速JavaFX图形界面的开发:
+Visualization tools to accelerate the development of JavaFX GUI:
 
-JavaFX Scene Builder如同NetBeans一般，通过拖拽的方式配置界面，待完成界面之後，保存为FXML格式文件，此文件以XML描述物件配置，再交由JavaFX程式处理，因此可減少直接以JavaFX编写界面的困難度。
+Like NetBeans, JavaFX Scene Builder can configure the interface by dragging and dropping. After the interface is completed, it is saved as a FXML file. The file describes the object configuration in XML and is processed by JavaFX program, so it can reduce the difficulty of directly writing the interface in JavaFX.
 
-JavaFX Scene Builder 2.0新增JavaFX Theme预览功能，菜单「Preview」→「JavaFX Theme」选择不同的主題，包括：
+JavaFX Scene Builder 2.0 added JavaFX Theme Preview function, the menu "Preview" → "JavaFX Theme" to select different themes, including
 
 + Modena (FX8).
 + Modena Touch (FX8).
@@ -65,40 +43,34 @@ JavaFX Scene Builder 2.0新增JavaFX Theme预览功能，菜单「Preview」→�
 
 #### JavaFX 3D
 
-在JavaFX8中提供了3D图像处理API，包括Shape3D (Box, Cylinder, MeshView, Sphere子类),SubScene, Material, PickResult, LightBase (AmbientLight 和PointLight子类),SceneAntialiasing等。Camera类也得到了更新。从JavaDoc中可以找到更多信息。
+JavaFX8 provides a 3D image processing API, Including Shape3D (Box, Cylinder, MeshView, Sphere subclasses),SubScene, Material, PickResult, LightBase (AmbientLight and PointLight subclasses),SceneAntialiasing, etc. The Camera class has also been updated. You can find more information in JavaDoc.
 
-#### 富文本
+#### Rich text
 
-强化了富文本的支持
+Enhanced support for rich text
 
 #### TreeTableView
 
-TreeTable支持
+TreeTable support
 
-#### 日期控件DatePicker
+#### Date control DatePicker
 
-增加日期控件
-
-
-### Spring Boot+JavaFX2 Demo介绍
+Adding date controls
 
 
-#### 程序加载 - Loader
+### Spring Boot+JavaFX2 Demo introduction
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93d3cucGRhaS50ZWNoL19pbWFnZXMvc3ByaW5nL3NwcmluZ2Jvb3QtamF2YWZ4LWFwcC0xLnBuZw?x-oss-process=image/format,png)
 
-#### 和WEB一样风格的GUI
+#### Program loading - Loader
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93d3cucGRhaS50ZWNoL19pbWFnZXMvc3ByaW5nL3NwcmluZ2Jvb3QtamF2YWZ4LWFwcC0yLnBuZw?x-oss-process=image/format,png)
+![image-20230523211622043](https://my-typora-p1.oss-cn-beijing.aliyuncs.com/typoraImgs/202305232118698.png)
 
-#### 对话框 - Popup
+#### Clean looking GUI
 
-![](https://www.pdai.tech/_images/spring/springboot-javafx-app-3.png)
+![image-20230523211755087](https://my-typora-p1.oss-cn-beijing.aliyuncs.com/typoraImgs/202305232118700.png)
 
-### 如何部署
-> 收到几个开发问如何进行运行和部署，统一回复下：
-
-具体执行maven安装的脚本如下（这里D:\git\github\springboot-javafx-app-demo是我本地的项目目录，需要改成你自己的）：
+### How to deploy
+Here's the script to run the maven installation (here D:\git\github\springboot-javafx-app-demo is my local project directory, so change it to your own) :
 
 ```bash
 mvn install:install-file -DgroupId=gn -DartifactId=GNCalendar -Dversion=v1.0 -Dpackaging=jar -Dfile=D:\git\github\springboot-javafx-app-demo\lib\GNCalendar-1.0-alpha.jar
@@ -114,13 +86,13 @@ mvn install:install-file -DgroupId=gn -DartifactId=GNAvatarView -Dversion=v1.0-r
 ```
 
 
-+ pom.xml如下
++ pom.xml is as following:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -214,32 +186,76 @@ oot-javafx-app-demo\lib\GNAvatarView-1.0-rc.jar
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-csv -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-csv</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
 		<plugins>
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.boot</groupId>-->
-<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--			</plugin>-->
+			<!--			<plugin>-->
+			<!--				<groupId>org.springframework.boot</groupId>-->
+			<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+			<!--			</plugin>-->
 
-				<plugin>
-					<groupId>com.zenjava</groupId>
-					<artifactId>javafx-maven-plugin</artifactId>
-					<version>8.8.3</version>
-					<configuration>
-						<vendor>pdai</vendor>
-						<mainClass>com.pdai.javafx.app.SpringFxAppApplication</mainClass>
-						<allPermissions>true</allPermissions>
-					</configuration>
-				</plugin>
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>8.8.3</version>
+				<configuration>
+					<vendor>pdai</vendor>
+					<mainClass>com.pdai.javafx.app.SpringFxAppApplication</mainClass>
+					<allPermissions>true</allPermissions>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
 </project>
 ```
 
-+ 以jar运行为例：
++ To start the program with SpringBoot, simply click on the class:
+
+![image-20230523212158083](../../../../../../../Typora/myimage/image-20230523212158083.png)
+
++ Take the jar run as an example:
 
 ```bash
 D:\git\github\springboot-javafx-app-demo>java -jar D:\git\github\springboot-javafx-app-demo\target\jfx\native\spring-fx-app-0.0.1-SNAPSHOT\app\spring-fx-app-0.0.1-SNAPSHOT-jfx.jar
@@ -279,6 +295,6 @@ X runtime of version 8.0.65
 X runtime of version 8.0.65
 ```
 
-### 示例代码
+### Remote repository
 
 @See https://github.com/Anonymi1ty/spring-fx-app
