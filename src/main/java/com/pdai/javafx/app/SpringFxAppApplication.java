@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Arrays;
 
 /**
- * <b>ClassName</b>: SpringFxAppApplication <br/>
+ * <b>ClassName</b>: SpringFxAppApplication
  *
- * <b>Description</b>: SpringFxAppApplication <br/>
+ * <b>Description</b>: SpringFxAppApplication
  *
  */
 @SpringBootApplication

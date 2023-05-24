@@ -48,7 +48,7 @@ public class DashboardController extends BaseController implements Initializable
         pieChart.setClockwise(false);
 
         XYChart.Series<String, Number> series = new XYChart.Series<>();
-        series.setName("测试柱状图数据");
+        series.setName("Test histogram data");
         series.getData().add(new XYChart.Data<>("0", 2D*Math.random()));
         series.getData().add(new XYChart.Data<>("1", 8D*Math.random()));
         series.getData().add(new XYChart.Data<>("2", 5D*Math.random()));

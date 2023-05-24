@@ -57,8 +57,7 @@ public class StageManager {
 	
 	/**
 	 * replace content for primary stage
-	 * 
-	 * @param view
+	 * @param view The FXML view to be swapped in the primaryStage
 	 */
 	public void switchScene(final FxmlView view) {
 		Parent viewRootNodeHierarchy = loadViewNodeHierarchy(view.fxml());
@@ -67,9 +66,8 @@ public class StageManager {
 	
 	/**
 	 * replace content for pane
-	 * 
-	 * @param view
-	 * @param body
+	 * @param view The FXML view to be swapped in the primaryStage
+	 * @param body The pane to be swapped in the primaryStage
 	 */
 	public void switchContent(final FxmlView view, ScrollPane body) {
 		Parent viewRootNodeHierarchy = loadViewNodeHierarchy(view.fxml());
@@ -79,7 +77,7 @@ public class StageManager {
 	/**
 	 * show
 	 * 
-	 * @param view
+	 * @param view The FXML view to be swapped in the primaryStage
 	 */
 	public void showPopWindow(final FxmlView view) {
 		Parent viewRootNodeHierarchy = loadViewNodeHierarchy(view.fxml());
@@ -110,7 +108,7 @@ public class StageManager {
 	/**
 	 * Loads the object hierarchy from a FXML document and returns to root node of
 	 * that hierarchy.
-	 *
+	 * @param fxmlFilePath path to the FXML document to be loaded
 	 * @return Parent root node of the FXML document hierarchy
 	 */
 	private Parent loadViewNodeHierarchy(String fxmlFilePath) {

@@ -41,8 +41,11 @@ public abstract class AbstractFxApplication extends Application {
 	 * 1. load spring application context;
 	 * 2. launch FX application;
 	 * 
-	 * @param appClass
-	 * @param args
+	 * @param appClass the application class
+	 * @param args the application arguments
+	 * @param _preloadViews the pre-load views
+	 * @param _initView the init view
+	 * @param args the application arguments
 	 */
 	public static void run(final Class<? extends Application> appClass, final List<FxmlView> _preloadViews,
 			final FxmlView _initView, final String[] args) {

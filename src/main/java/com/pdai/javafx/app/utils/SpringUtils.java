@@ -15,8 +15,8 @@ public class SpringUtils implements ApplicationContextAware {
 
 	/**
 	 * Implement the callback methods of the ApplicationContextAware interface to set the context environment
-	 * @param applicationContext
-	 * @throws BeansException
+	 * @param applicationContext ApplicationContext object to be set up in the SpringUtils class.
+	 * @throws BeansException Exception thrown when the Spring container fails to set the ApplicationContext object to the SpringUtils class.
 	 */
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -35,8 +35,8 @@ public class SpringUtils implements ApplicationContextAware {
 
 	/**
 	 * Get the Bean by name.
-	 * @param name
-	 * @return
+	 * @param name Bean name
+	 * @return Object
 	 */
 	public static Object getBean(String name) {
 		return getApplicationContext().getBean(name);
@@ -44,9 +44,9 @@ public class SpringUtils implements ApplicationContextAware {
 
 	/**
 	 * Get the Bean by name.
-	 * @param clazz
-	 * @return
-	 * @param <T>
+	 * @param clazz Bean class
+	 * @return Object
+	 * @param <T> Bean class
 	 */
 	public static <T> T getBean(Class<T> clazz) {
 		return getApplicationContext().getBean(clazz);
@@ -54,10 +54,10 @@ public class SpringUtils implements ApplicationContextAware {
 
 	/**
 	 * Returns the specified Bean by name and Clazz
-	 * @param name
-	 * @param clazz
-	 * @return
-	 * @param <T>
+	 * @param name Bean name
+	 * @param clazz Bean class
+	 * @return Object
+	 * @param <T> Bean class
 	 */
 	public static <T> T getBean(String name, Class<T> clazz) {
 		return getApplicationContext().getBean(name, clazz);

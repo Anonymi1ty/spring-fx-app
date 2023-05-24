@@ -22,13 +22,12 @@ import java.util.*;
 @ComponentScan
 @Component
 public class JsonUtils {
-    // 从JSON文件中读取数据，返回一个String类型的字符串
 
     /**
      * Reading a json file and return a string
      * @param filePath json file path
      * @return Returns the corresponding json string
-     * @throws IOException
+     * @throws IOException File not found exception
      */
     public static String getJson(String filePath) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
@@ -44,12 +43,11 @@ public class JsonUtils {
     /**
      * Converts a Java object to a Json string
      * @param object Java Objects
-     * @return Json string
+     * @throws IOException File not found exception
      */
     public static void javaBeanToJsonFile(Object object) throws IOException {
         Gson gson = new Gson();
         String jsonString = gson.toJson(object);
-        //  写入到Forum.json文件中
         BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/data/Forum.json"));
         writer.write(jsonString);
         writer.close();
@@ -58,7 +56,6 @@ public class JsonUtils {
     public static void StudentToJsonFile(Object object) throws IOException {
         Gson gson = new Gson();
         String jsonString = gson.toJson(object);
-        //  写入到Forum.json文件中
         BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/data/Student_Info.json"));
         writer.write(jsonString);
         writer.close();
@@ -94,7 +91,7 @@ public class JsonUtils {
 
     /**
      * (Reuse method) Gets the data in Forum.json and returns a List of Info objects
-     * @return List<ForumInfo>
+     * @return List of ForumInfo objects
      */
     public static List<ForumInfo> getInfo() {
         String jsonString;
@@ -123,7 +120,7 @@ public class JsonUtils {
 
     /**
      * To schedule the JSON file into a CSV file, and save the SRC/main/resources/data/schedule. CSV path
-     * @throws IOException
+     * @throws IOException File not found exception
      */
     public static void scheduleJsonToCsv() throws IOException {
         // 读取JSON文件
@@ -131,16 +128,15 @@ public class JsonUtils {
         JsonParser jsonParser = mapper.getFactory().createParser(new File("src/main/resources/data/schedule.json"));
         Map<String, Map<String, String>> data = mapper.readValue(jsonParser, Map.class);
 
-        // 定义CSV的表头
+
         Set<String> headerSet = new LinkedHashSet<>();
         for (Map<String, String> day : data.values()) {
             headerSet.addAll(day.keySet());
         }
-        // 对表头进行排序，保证输出的CSV文件的表头是有序的
         List<String> headerList = new ArrayList<>(headerSet);
 //        Collections.sort(headerList);
 
-        // 创建CSV Schema
+
         CsvSchema.Builder csvSchemaBuilder = CsvSchema.builder();
         csvSchemaBuilder.setUseHeader(true).setColumnSeparator(',');
         for (String header : headerList) {

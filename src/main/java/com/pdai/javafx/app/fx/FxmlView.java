@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
  */
 public enum FxmlView {
     MAIN {
-        // title()是给窗口设置标题的
         @Override
 		public String title() {
             return getStringFromResourceBundle("app.title");

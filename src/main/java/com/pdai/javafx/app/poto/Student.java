@@ -10,7 +10,6 @@ import java.util.Map;
  */
 @Data
 public class Student {
-    //本类负责承接Student_info.json文件中的数据
     private String name;
     private int age;
     private String major;

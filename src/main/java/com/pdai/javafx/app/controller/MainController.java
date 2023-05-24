@@ -133,7 +133,6 @@ public class MainController extends BaseController implements Initializable {
 			drawer.setPrefWidth(minimum);
 
 			for (Node node : views.getChildren()) {
-				// 如果是按钮
 				if (node instanceof Button) {
 					((Button) node).setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 					((Button) node).setAlignment(Pos.BASELINE_CENTER);

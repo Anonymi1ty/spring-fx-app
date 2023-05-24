@@ -65,15 +65,15 @@ public class FxAppPreloader extends Preloader {
 			StateChangeNotification.Type type = info.getType();
 			switch (type) {
 			case BEFORE_LOAD:
-				label.textProperty().set("初始化成功...");
+				label.textProperty().set("Initialization successful...");
 				Thread.sleep(2000);
 				break;
 			case BEFORE_INIT:
-				label.textProperty().set("正在加载模块...");
+				label.textProperty().set("Loading modules...");
 				Thread.sleep(1000);
 				break;
 			case BEFORE_START:
-				label.textProperty().set("加载成功，即将跳转到主页面");
+				label.textProperty().set("Loaded successfully, about to jump to the main page");
 				Thread.sleep(1000);
 				stage.close();
 			}

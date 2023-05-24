@@ -61,7 +61,7 @@ public class ForumController extends BaseController implements Initializable {
      * the browser if the application was launched as an applet.
      * Applications may create other stages, if needed, but they will not be
      * primary stages and will not be embedded in the browser.
-     * @throws Exception
+     * @throws Exception if something goes wrong during stopping the application
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
