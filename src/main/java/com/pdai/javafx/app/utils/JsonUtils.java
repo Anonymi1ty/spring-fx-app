@@ -122,7 +122,7 @@ public class JsonUtils {
      * To schedule the JSON file into a CSV file, and save the SRC/main/resources/data/schedule. CSV path
      * @throws IOException File not found exception
      */
-    public static void scheduleJsonToCsv() throws IOException {
+    public static void scheduleJsonToCsv(String url) throws IOException {
         // 读取JSON文件
         ObjectMapper mapper = new ObjectMapper();
         JsonParser jsonParser = mapper.getFactory().createParser(new File("src/main/resources/data/schedule.json"));
@@ -148,7 +148,7 @@ public class JsonUtils {
         CsvMapper csvMapper = new CsvMapper();
         csvMapper.writerFor(Map.class)
                 .with(csvSchema)
-                .writeValues(new File("src/main/resources/data/schedule.csv"))
+                .writeValues(new File(url))
                 .writeAll(data.values());
     }
 }

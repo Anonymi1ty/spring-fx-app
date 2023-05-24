@@ -1,5 +1,6 @@
 package com.pdai.javafx.app.controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
@@ -14,6 +15,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.controlsfx.control.PopOver;
 import org.controlsfx.control.Rating;
@@ -24,6 +26,9 @@ import javafx.fxml.Initializable;
 
 import javafx.scene.layout.*;
 
+import javax.swing.*;
+
+import static com.pdai.javafx.app.fx.FxAppPreloader.primaryStage;
 import static com.pdai.javafx.app.utils.JsonUtils.*;
 
 /**
@@ -71,7 +76,7 @@ public class ProfileController extends BaseController implements Initializable {
         schedule = getSchedule();
 
         note.textProperty().bind(rating.ratingProperty().asString(Locale.ENGLISH, "%.2f"));
-		//TODO fullName.textProperty().bind(/* App.getUserDetail().textProperty() */);
+        //TODO fullName.textProperty().bind(/* App.getUserDetail().textProperty() */);
         age.setText(String.valueOf(studentInfo.getAge()));
         major.setText(studentInfo.getMajor());
         College.setText("Queen Mary");
@@ -470,7 +475,21 @@ private void AwardsAdd(){
     }
     @FXML
     private void ExportSchedule() throws IOException {
-        scheduleJsonToCsv();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select a save location");
+
+        // Set the default save file name and initial directory (optional)
+        fileChooser.setInitialFileName("Schedule.csv");
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        // Display the Save File dialog and get the file selected by the user
+        File selectedFile = fileChooser.showSaveDialog(primaryStage);
+
+        // Process the user-selected file (in this case just print the file path)
+        if (selectedFile != null) {
+            System.out.println("选择的文件路径：" + selectedFile.getAbsolutePath());
+            scheduleJsonToCsv(selectedFile.getAbsolutePath());
+        }
     }
 
     @Override

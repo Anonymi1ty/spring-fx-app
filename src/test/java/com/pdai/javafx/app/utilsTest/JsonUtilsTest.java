@@ -48,7 +48,7 @@ public class JsonUtilsTest {
     @Test
     public void testJavaBeanToJsonFile() {
         try {
-            scheduleJsonToCsv();
+            scheduleJsonToCsv("../resources/data/schedule.json");
             System.out.println("success");
         } catch (IOException e) {
             throw new RuntimeException(e);

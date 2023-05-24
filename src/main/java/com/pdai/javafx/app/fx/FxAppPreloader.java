@@ -22,6 +22,7 @@ public class FxAppPreloader extends Preloader {
 	private JFXProgressBar progressBar;
 	private Parent view;
 	private Stage stage;
+	public static Stage primaryStage;
 	private Label label;
 
 	@Override
@@ -36,6 +37,7 @@ public class FxAppPreloader extends Preloader {
 	@Override
 	public void start(Stage primary) {
 		stage = primary;
+		primaryStage = primary;
 		primary.initStyle(StageStyle.TRANSPARENT);
 		Scene scene = new Scene(view);
 		scene.setFill(Color.TRANSPARENT);
@@ -81,4 +83,5 @@ public class FxAppPreloader extends Preloader {
 			e.printStackTrace();
 		}
 	}
+
 }
